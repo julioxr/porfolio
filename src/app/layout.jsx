@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
             <Head>
                 <link rel="icon" href="/julioLogo.png" />
             </Head>
-            <body>
+            <body className="text-night">
                 <MainMenu />
                 <main>{children}</main>
             </body>

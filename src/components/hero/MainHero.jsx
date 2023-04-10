@@ -11,11 +11,11 @@ const MainHero = () => {
                     <div className="flex justify-between w-full max-w-4xl">
                         <div className="flex flex-col justify-center gap-6">
                             <h1 className="text-4xl font-bold">
-                                Fullstack developer
+                                Frontend developer
                             </h1>
-                            <p className="text-base decoration-[2px] max-w-[350px]">
+                            <p className="text-base max-w-[350px]">
                                 Soy{" "}
-                                <span className="font-bold text-viridian underline">
+                                <span className="font-bold decoration-[2px] text-viridian underline">
                                     Julio Roja
                                 </span>
                                 , un desarrollador web apasionado que vive en
