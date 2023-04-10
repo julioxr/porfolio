@@ -18,20 +18,21 @@ const MainInfo = () => {
                             Un desarrollador Front End dedicado
                         </h2>
                         <p className="text-sm text-gray-500">
-                            ¡Hola!, actualmente, me desempeño como SAP Key User
-                            en el área de logística desempeñando rol de QA hace
-                            6 años, donde me encargo de analizar, testear e
-                            implementar desarrollos en SAP y aplicaciones web.
+                            ¡Hola!, Como desarrollador frontend poseo las
+                            siguientes habilidades. Next Js, React, Javascript,
+                            Tailwind, Firebase. Siendo estas las tecnologías que
+                            mas utilizo en mi dia a dia. Junto a otras de
+                            backend como NodeJS, Express, MongoDB, MySQL.
                         </p>
                         <p className="text-sm text-gray-500">
-                            Soy una persona muy autodidacta y hace 2 años decidi
-                            encaminarme en el desarrollo web
+                            Soy muy autodidacta y hace 2 años decidi encaminarme
+                            en el desarrollo web. tengo un background como QA de
+                            6 años.
                         </p>
                         <p className="text-sm text-gray-500">
-                            Tengo facilidad para trabajo en equipo, soy curioso,
-                            trabajo siempre con iniciativa, excelente
-                            comunicación y compañerismo, analítico, en constante
-                            aprendizaje, me encanta enseñar, capacitar y ayudar.
+                            Soy un jugador en equipo, me encanta enseñar y
+                            ayudar a quienes lo necesitan. Siempre con
+                            iniciativa buscando el éxito.
                         </p>
                     </div>
                 </div>
