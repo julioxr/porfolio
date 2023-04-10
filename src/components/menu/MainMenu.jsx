@@ -2,12 +2,12 @@ import React from "react";
 
 const MainMenu = () => {
     return (
-        <header className="flex justify-between bg-red-400 px-12">
-            <div>Julio.dev</div>
-            <div className="flex list-none gap-6">
-                <ul>
+        <header className="flex justify-between text-night bg-celadon px-32 h-16 items-center">
+            <div className="font-bold text-2xl mr-auto">Julio.dev</div>
+            <div className="mr-8">
+                <ul className="list-none gap-6 flex font-medium">
                     <li>
-                        <a href="">Home</a>
+                        <a href="">Inicio</a>
                     </li>
                     <li>
                         <a href="">Sobre mi</a>
@@ -20,6 +20,9 @@ const MainMenu = () => {
                     </li>
                 </ul>
             </div>
+            <button className="py-1 px-3 bg-platinum text-night rounded-full">
+                Descargar CV
+            </button>
         </header>
     );
 };

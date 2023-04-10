@@ -1,4 +1,5 @@
 import MainMenu from "@/components/menu/MainMenu";
+import Head from "next/head";
 import "./globals.css";
 
 export const metadata = {
@@ -9,9 +10,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="es">
+            <Head>
+                <link rel="icon" href="/julioLogo.png" />
+            </Head>
             <body>
                 <MainMenu />
-                <main className="container mx-auto">{children}</main>
+                <main>{children}</main>
             </body>
         </html>
     );
