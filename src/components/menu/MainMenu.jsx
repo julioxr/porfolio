@@ -20,7 +20,7 @@ const MainMenu = () => {
                     </li>
                 </ul>
             </div>
-            <button className="py-1 px-3 bg-platinum text-night rounded-full">
+            <button className="py-1 px-3 bg-white w-32 text-night rounded-full">
                 Descargar CV
             </button>
         </header>

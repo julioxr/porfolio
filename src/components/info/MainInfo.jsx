@@ -2,7 +2,7 @@ import React from "react";
 
 const MainInfo = () => {
     return (
-        <section>
+        <section className="h-96 bg-celadon">
             <div>
                 <div>Imagen</div>
             </div>
