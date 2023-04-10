@@ -18,21 +18,27 @@ const MainInfo = () => {
                             Un desarrollador Front End dedicado
                         </h2>
                         <p className="text-sm text-gray-500">
-                            ¡Hola!, Como desarrollador frontend poseo las
-                            siguientes habilidades. Next Js, React, Javascript,
-                            Tailwind, Firebase. Siendo estas las tecnologías que
-                            mas utilizo en mi dia a dia. Junto a otras de
-                            backend como NodeJS, Express, MongoDB, MySQL.
+                            ¡Hola! Soy un desarrollador frontend con amplias
+                            habilidades en tecnologías como Next.js, React,
+                            JavaScript, Tailwind y Firebase, las cuales utilizo
+                            a diario en mi trabajo. También tengo experiencia en
+                            tecnologías de backend como NodeJS, Express, MongoDB
+                            y MySQL.
                         </p>
                         <p className="text-sm text-gray-500">
-                            Soy muy autodidacta y hace 2 años decidi encaminarme
-                            en el desarrollo web. tengo un background como QA de
-                            6 años.
+                            Hace 2 años decidí incursionar en el desarrollo web
+                            y desde entonces he demostrado ser un autodidacta
+                            apasionado por aprender y mejorar constantemente.
+                            Actualmente, trabajo como QA hace 6 años, lo que me
+                            ha brindado una visión más completa y crítica sobre
+                            el desarrollo de software.
                         </p>
                         <p className="text-sm text-gray-500">
-                            Soy un jugador en equipo, me encanta enseñar y
-                            ayudar a quienes lo necesitan. Siempre con
-                            iniciativa buscando el éxito.
+                            Soy una persona proactiva y orientada a resultados,
+                            siempre dispuesto a colaborar con mi equipo y
+                            brindar ayuda a quienes lo necesitan. Me gusta
+                            enseñar y compartir mis conocimientos para ayudar a
+                            los demás a crecer y mejorar.
                         </p>
                     </div>
                 </div>
