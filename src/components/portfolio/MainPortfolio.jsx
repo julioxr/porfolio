@@ -3,13 +3,16 @@ import CardPortfolio from "./CardPortfolio";
 
 const MainPortfolio = () => {
     return (
-        <section className="h-auto p-12 bg-celadon">
+        <section className="h-auto pb-48 pt-32 bg-celadon">
             <div className="container mx-auto">
-                <h2 className="font-bold mb-4">Portfolio</h2>
+                <div>
+                    <h2 className="font-bold text-xl mb-4">Portfolio</h2>
 
-                <div className="flex gap-4 justify-center">
-                    <CardPortfolio img="/portfolio.jpeg" />
-                    <CardPortfolio img="/store.jpeg" />
+                    <div className="flex gap-x-4 gap-y-8 flex-wrap justify-start">
+                        <CardPortfolio img="/portfolio.jpeg" />
+                        <CardPortfolio img="/store.jpeg" />
+                        <CardPortfolio img="/supermarket.jpg" />
+                    </div>
                 </div>
             </div>
         </section>

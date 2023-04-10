@@ -6,7 +6,7 @@ import StackHero from "./StackHero";
 const MainHero = () => {
     return (
         <>
-            <section className="h-[calc(100vh-48px)] relative text-night bg-[url('/ornament.svg')]">
+            <section className="h-[calc(100vh-48px)] relative bg-[url('/ornament.svg')]">
                 <div className="container mx-auto flex flex-col justify-center items-center h-full">
                     <div className="flex justify-between w-full max-w-4xl">
                         <div className="flex flex-col justify-center gap-6">
@@ -45,7 +45,7 @@ const MainHero = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 1200 120"
                         preserveAspectRatio="none"
-                        className="h-14 rotate-180 w-full fill-[#80e895] opacity-100"
+                        className="h-20 rotate-180 w-full fill-[#80e895]"
                     >
                         <path
                             d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"

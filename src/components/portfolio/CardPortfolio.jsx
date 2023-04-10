@@ -4,9 +4,8 @@ import Link from "next/link";
 import { RiGithubFill, RiExternalLinkLine } from "react-icons/ri";
 
 const CardPortfolio = ({ img }) => {
-    console.log(img);
     return (
-        <div className="bg-white h-auto rounded-lg shadow-lg">
+        <div className="bg-white h-auto rounded-lg shadow-xl max-w-[760px]">
             <div className="flex justify-center items-center h-full">
                 <div className="p-4 rounded-lg">
                     <Image
@@ -17,7 +16,7 @@ const CardPortfolio = ({ img }) => {
                         className="rounded-lg h-auto"
                     />
                 </div>
-                <div className="text-center px-8 flex flex-col gap-4 max-w-xs">
+                <div className="text-center px-8 flex flex-col gap-4 max-w-[256px]">
                     <h4 className="font-bold">Portfolio personal</h4>
                     <p className="text-sm">
                         A car rental website is an online platform that allows
