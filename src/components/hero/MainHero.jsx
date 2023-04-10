@@ -7,15 +7,15 @@ const MainHero = () => {
     return (
         <>
             <section className="h-[calc(100vh-48px)] relative bg-[url('/ornament.svg')]">
-                <div className="container mx-auto flex flex-col justify-center items-center h-full">
-                    <div className="flex justify-between w-full max-w-4xl">
+                <div className="container mx-auto flex flex-col justify-start items-center pt-8 h-full">
+                    <div className="flex justify-between items-center w-full max-w-4xl">
                         <div className="flex flex-col justify-center gap-6">
                             <h1 className="text-4xl font-bold">
                                 Frontend developer
                             </h1>
                             <p className="text-base max-w-[350px]">
                                 Soy{" "}
-                                <span className="font-bold decoration-[2px] text-viridian underline">
+                                <span className="font-bold decoration-[2px] text-celadon underline">
                                     Julio Roja
                                 </span>
                                 , un desarrollador web apasionado que vive en
@@ -27,12 +27,12 @@ const MainHero = () => {
                             </button>
                         </div>
                         <div>
-                            <div className="w-96 h-96">
+                            <div className="w-[30rem] h-auto">
                                 <Image
                                     src="/heroImg.svg"
                                     alt="imagen de hero, hombre en pc trabajando"
-                                    width={400}
-                                    height={400}
+                                    width={1200}
+                                    height={1200}
                                 />
                             </div>
                         </div>

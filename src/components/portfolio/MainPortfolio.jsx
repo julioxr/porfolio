@@ -3,12 +3,16 @@ import CardPortfolio from "./CardPortfolio";
 
 const MainPortfolio = () => {
     return (
-        <section className="h-auto pb-48 pt-32 bg-celadon">
+        <section className="h-auto py-32 bg-celadon relative">
             <div className="container mx-auto">
                 <div>
-                    <h2 className="font-bold text-xl mb-4">Portfolio</h2>
+                    <div className="z-10">
+                        <h2 className="font-bold mb-4 text-[15rem] absolute -top-24 left-10 text-white">
+                            PORTFOLIO
+                        </h2>
+                    </div>
 
-                    <div className="flex gap-x-4 gap-y-8 flex-wrap justify-start">
+                    <div className="flex gap-x-4 gap-y-8 flex-wrap justify-start z-30 relative">
                         <CardPortfolio img="/portfolio.jpeg" />
                         <CardPortfolio img="/store.jpeg" />
                         <CardPortfolio img="/supermarket.jpg" />

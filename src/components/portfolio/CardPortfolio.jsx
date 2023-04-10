@@ -25,20 +25,26 @@ const CardPortfolio = ({ img }) => {
                         and reserving cars.
                     </p>
                     <div className="flex gap-4 justify-center font-semibold">
-                        <span className="py-1 px-2 bg-night rounded-lg text-white">
+                        <span className="py-1 px-2 bg-viridian rounded-lg text-white">
                             React
                         </span>
-                        <span className="py-1 px-2 bg-night rounded-lg text-white">
+                        <span className="py-1 px-2 bg-viridian rounded-lg text-white">
                             Next JS
                         </span>
                     </div>
-                    <div className="flex gap-4 justify-center font font-semibold text-2xl">
-                        <Link href="#" target="_blank">
-                            <RiGithubFill />
-                        </Link>
-                        <Link href="#" target="_blank">
-                            <RiExternalLinkLine />
-                        </Link>
+                    <div className="flex gap-2 justify-center font font-semibold text-2xl">
+                        <div className="flex gap-1">
+                            <span className="text-base">GitHub</span>
+                            <Link href="#" target="_blank">
+                                <RiGithubFill />
+                            </Link>
+                        </div>
+                        <div className="flex gap-1">
+                            <span className="text-base">Demo</span>
+                            <Link href="#" target="_blank">
+                                <RiExternalLinkLine />
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
