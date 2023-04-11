@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import SocialsHero from "./SocialsHero";
 import StackHero from "./StackHero";
 
 const MainHero = () => {
@@ -21,7 +20,6 @@ const MainHero = () => {
                                 , un desarrollador web apasionado que vive en
                                 Argentina, Buenos Aires.
                             </p>
-                            {/* <SocialsHero /> */}
                             <button className="py-1 px-3 w-32 bg-celadon text-night rounded-full mt-2">
                                 Contactame
                             </button>
