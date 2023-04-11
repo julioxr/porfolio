@@ -34,11 +34,11 @@ const MainInfo = () => {
                             el desarrollo de software.
                         </p>
                         <p className="text-sm text-gray-500">
-                            Soy una persona proactiva y orientada a resultados,
-                            siempre dispuesto a colaborar con mi equipo y
-                            brindar ayuda a quienes lo necesitan. Me gusta
-                            enseñar y compartir mis conocimientos para ayudar a
-                            los demás a crecer y mejorar.
+                            Soy una persona con iniciativa y orientada a
+                            resultados, siempre dispuesto a colaborar con mi
+                            equipo y brindar ayuda a quienes lo necesitan. Me
+                            gusta enseñar y compartir mis conocimientos para
+                            ayudar a los demás a crecer y mejorar.
                         </p>
                     </div>
                 </div>

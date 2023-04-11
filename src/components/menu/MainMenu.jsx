@@ -4,7 +4,7 @@ const MainMenu = () => {
     return (
         <header className="">
             <div className="flex justify-between items-center container mx-auto h-16">
-                <div className="font-bold text-2xl mr-auto text-celadon">
+                <div className="font-bold text-3xl mr-auto text-night">
                     Julio.dev
                 </div>
                 <div className="mr-8">

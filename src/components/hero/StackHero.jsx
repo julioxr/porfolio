@@ -9,76 +9,36 @@ const StackHero = () => {
             </h2>
             <h2 className="font-semibold">Front</h2>
             <div className="flex gap-8 font-light mt-2">
-                <Image
-                    src="/stack/nextjs.svg"
-                    alt="imagen de hero, hombre en pc trabajando"
-                    width={45}
-                    height={45}
-                />
-                <Image
-                    src="/stack/reactjs.svg"
-                    alt="imagen de hero, hombre en pc trabajando"
-                    width={45}
-                    height={45}
-                />
-                <Image
-                    src="/stack/js.svg"
-                    alt="imagen de hero, hombre en pc trabajando"
-                    width={45}
-                    height={45}
-                />
-                <Image
-                    src="/stack/ts.svg"
-                    alt="imagen de hero, hombre en pc trabajando"
-                    width={45}
-                    height={45}
-                />
+                <Image src="/stack/nextjs.svg" alt="" width={45} height={45} />
+                <Image src="/stack/reactjs.svg" alt="" width={45} height={45} />
+                <Image src="/stack/js.svg" alt="" width={45} height={45} />
+                <Image src="/stack/ts.svg" alt="" width={45} height={45} />
                 <Image
                     src="/stack/tailwind.svg"
-                    alt="imagen de hero, hombre en pc trabajando"
+                    alt=""
                     width={45}
                     height={45}
                 />
                 <Image
                     src="/stack/firebase.svg"
-                    alt="imagen de hero, hombre en pc trabajando"
+                    alt=""
                     width={45}
                     height={45}
                 />
 
                 <Image
                     src="/stack/bootstrap.svg"
-                    alt="imagen de hero, hombre en pc trabajando"
+                    alt=""
                     width={45}
                     height={45}
                 />
             </div>
             <h2 className="font-semibold mt-2">Back</h2>
             <div className="flex gap-8 font-light mt-2">
-                <Image
-                    src="/stack/node.svg"
-                    alt="imagen de hero, hombre en pc trabajando"
-                    width={45}
-                    height={45}
-                />
-                <Image
-                    src="/stack/express.svg"
-                    alt="imagen de hero, hombre en pc trabajando"
-                    width={45}
-                    height={45}
-                />
-                <Image
-                    src="/stack/mongo.svg"
-                    alt="imagen de hero, hombre en pc trabajando"
-                    width={45}
-                    height={45}
-                />
-                <Image
-                    src="/stack/sql.svg"
-                    alt="imagen de hero, hombre en pc trabajando"
-                    width={45}
-                    height={45}
-                />
+                <Image src="/stack/node.svg" alt="" width={45} height={45} />
+                <Image src="/stack/express.svg" alt="" width={45} height={45} />
+                <Image src="/stack/mongo.svg" alt="" width={45} height={45} />
+                <Image src="/stack/sql.svg" alt="" width={45} height={45} />
             </div>
         </div>
     );

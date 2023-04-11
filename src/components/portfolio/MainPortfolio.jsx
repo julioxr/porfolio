@@ -12,9 +12,10 @@ const MainPortfolio = () => {
                         </h2>
                     </div>
 
-                    <div className="flex gap-x-4 gap-y-8 flex-wrap justify-start z-30 relative">
-                        <CardPortfolio img="/portfolio.jpeg" />
+                    <div className="flex gap-x-4 gap-y-6 flex-wrap justify-start z-30 relative">
                         <CardPortfolio img="/store.jpeg" />
+                        <CardPortfolio img="/portfolio.jpeg" />
+                        <CardPortfolio img="/inmobiliaria.png" />
                         <CardPortfolio img="/supermarket.jpg" />
                     </div>
                 </div>

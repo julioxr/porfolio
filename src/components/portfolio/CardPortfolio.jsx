@@ -25,10 +25,10 @@ const CardPortfolio = ({ img }) => {
                         and reserving cars.
                     </p>
                     <div className="flex gap-4 justify-center font-semibold">
-                        <span className="py-1 px-2 bg-viridian rounded-lg text-white">
+                        <span className="py-1 px-2 bg-white border-2 border-celadon rounded-lg text-celadon">
                             React
                         </span>
-                        <span className="py-1 px-2 bg-viridian rounded-lg text-white">
+                        <span className="py-1 px-2 bg-white border-2 border-celadon rounded-lg text-celadon">
                             Next JS
                         </span>
                     </div>
