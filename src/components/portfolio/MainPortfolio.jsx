@@ -3,11 +3,11 @@ import CardPortfolio from "./CardPortfolio";
 
 const MainPortfolio = () => {
     return (
-        <section className="h-auto py-32 bg-celadon relative">
+        <section className="h-auto pb-32 pt-44 bg-celadon relative">
             <div className="container mx-auto">
                 <div>
                     <div className="z-10">
-                        <h2 className="font-bold mb-4 text-[15rem] absolute -top-24 left-10 text-white">
+                        <h2 className="font-bold mb-4 text-[15rem] absolute -top-20 left-10 text-white">
                             PORTFOLIO
                         </h2>
                     </div>
