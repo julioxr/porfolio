@@ -1,15 +1,14 @@
 import React from "react";
+import FormContacto from "./FormContacto";
 
 const MainContacto = () => {
     return (
-        <section>
-            <h2>Contacto</h2>
-            <div>
-                <div>Icono</div>
-                <div>
-                    <h4>Mail</h4>
-                    <p>julioroja987@gmail.com</p>
-                </div>
+        <section className="bg-celadon w-full text-night bg-[url('/ornament.svg')]">
+            <div className="container mx-auto">
+                <h2 className="font-bold text-5xl pt-10 text-white text-center">
+                    Contactame
+                </h2>
+                <FormContacto />
             </div>
         </section>
     );
