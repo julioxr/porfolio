@@ -10,16 +10,16 @@ const MainMenu = () => {
                 <div className="mr-8">
                     <ul className="list-none gap-6 flex font-medium">
                         <li>
-                            <a href="">Inicio</a>
+                            <a href="#inicio">Inicio</a>
                         </li>
                         <li>
-                            <a href="">Sobre mi</a>
+                            <a href="#sobre-mi">Sobre mi</a>
                         </li>
                         <li>
-                            <a href="">Proyectos</a>
+                            <a href="#proyectos">Proyectos</a>
                         </li>
                         <li>
-                            <a href="">Contacto</a>
+                            <a href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>

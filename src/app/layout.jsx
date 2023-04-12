@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="es">
+        <html lang="es" className="scroll-smooth">
             <Head>
                 <link rel="icon" href="/julioLogo.png" />
             </Head>

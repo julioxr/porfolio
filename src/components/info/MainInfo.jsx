@@ -4,14 +4,14 @@ import Image from "next/image";
 
 const MainInfo = () => {
     return (
-        <section className="py-20 relative h-auto">
+        <section className="py-20 relative h-auto" id="sobre-mi">
             <div className="container mx-auto flex justify-center h-[40rem] w-full">
                 <div className="max-w-4xl flex w-full gap-8 items-center">
                     <div className="z-20">
                         <Image src="/aboutMe.svg" width={800} height={800} />
                     </div>
                     <div className="flex flex-col gap-3 w-[40rem]">
-                        <h4 className="-ml-24 z-10 font-bold text-5xl text-white bg-celadon px-4">
+                        <h4 className="-ml-28  z-10 font-bold text-5xl text-white bg-celadon px-4">
                             SOBRE MI
                         </h4>
                         <h2 className="font-bold underline decoration-[2px]">

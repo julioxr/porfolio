@@ -1,11 +1,15 @@
 import React from "react";
 import Image from "next/image";
 import StackHero from "./StackHero";
+import { motion } from "framer-motion";
 
 const MainHero = () => {
     return (
         <>
-            <section className="h-[calc(100vh-48px)] relative bg-[url('/ornament.svg')]">
+            <section
+                className="h-[calc(100vh-48px)] relative bg-[url('/ornament.svg')]"
+                id="inicio"
+            >
                 <div className="container mx-auto flex flex-col justify-start items-center pt-8 h-full">
                     <div className="flex justify-between items-center w-full max-w-4xl">
                         <div className="flex flex-col justify-center gap-6">

@@ -3,12 +3,15 @@ import CardPortfolio from "./CardPortfolio";
 
 const MainPortfolio = () => {
     return (
-        <section className="h-auto pb-32 pt-44 bg-celadon relative">
+        <section
+            className="h-auto pb-32 pt-44 bg-celadon relative"
+            id="proyectos"
+        >
             <div className="container mx-auto">
                 <div>
                     <div className="z-10">
                         <h2 className="font-bold mb-4 text-[15rem] absolute -top-20 left-10 text-white">
-                            PORTFOLIO
+                            PROYECTOS
                         </h2>
                     </div>
 

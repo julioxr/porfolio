@@ -21,7 +21,7 @@ const FormContacto = () => {
                 <input
                     id="name"
                     type="name"
-                    name="name"
+                    name="nombre"
                     className="w-full rounded-sm h-10 pl-4 appearance-none font-light focus:outline-none"
                 />
                 <ValidationError
@@ -51,7 +51,7 @@ const FormContacto = () => {
 
                 <textarea
                     id="message"
-                    name="message"
+                    name="mensaje"
                     className="w-full h-32  rounded-sm pl-4 pt-2 appearance-none font-light focus:outline-none"
                 />
                 <ValidationError
