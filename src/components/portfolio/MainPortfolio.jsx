@@ -40,7 +40,7 @@ const MainPortfolio = () => {
                             whileInView={{ x: 0, opacity: 1 }}
                             transition={{ duration: 0.5 }}
                             viewport={{ once: true }}
-                            className="font-bold mb-4 text-[4rem] sm:text-[15rem] absolute -top-2 sm:-top-20 left-0 sm:left-10 text-white"
+                            className="font-bold mb-4 text-[4rem] sm:text-[15rem] absolute -top-1 sm:-top-20 left-0 sm:left-10 text-white"
                         >
                             PROYECTOS
                         </motion.h2>

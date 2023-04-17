@@ -9,7 +9,7 @@ const MainContacto = () => {
         >
             <div className="container mx-auto">
                 <h2 className="font-bold text-5xl py-6 sm:py-10 text-white text-center">
-                    Contactame
+                    CONTACTAME
                 </h2>
                 <FormContacto />
             </div>
