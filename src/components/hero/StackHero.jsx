@@ -60,7 +60,7 @@ const StackHero = () => {
                 Stack Tecnológico
             </h2>
             <h2 className="font-semibold">Front</h2>
-            <div className="flex flex-wrap gap-2 sm:gap-8 font-light">
+            <div className="flex flex-wrap gap-2 sm:gap-8 font-light sm:mt-2">
                 {frontTechnologies &&
                     frontTechnologies.map(({ src, name }) => {
                         return (
@@ -75,7 +75,7 @@ const StackHero = () => {
                     })}
             </div>
             <h2 className="font-semibold mt-2">Back</h2>
-            <div className="flex flex-wrap gap-2 sm:gap-8 font-light">
+            <div className="flex flex-wrap gap-2 sm:gap-8 font-light sm:mt-2">
                 {backTechnologies &&
                     backTechnologies.map(({ src, name }) => {
                         {

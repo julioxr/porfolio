@@ -37,13 +37,13 @@ const MainPortfolio = () => {
                             transition={{ duration: 0.5 }}
                             viewport={{ once: true }}
                             ease="easeInOut"
-                            className="font-bold mb-4 text-[4rem] sm:text-[15rem] absolute top-0 sm:-top-20 left-0 sm:left-10 sm:text-white"
+                            className="font-bold mb-4 text-[4rem] sm:text-[15rem] absolute top-0 sm:-top-20 left-0 sm:left-10 text-white"
                         >
                             PROYECTOS
                         </motion.h2>
                     </div>
 
-                    <div className="flex gap-x-4 gap-y-6 flex-wrap justify-center z-30 relative">
+                    <div className="flex gap-x-4 gap-y-6 flex-wrap justify-center z-30 relative px-8 sm:px-8">
                         {cards.map((card) => {
                             return <CardPortfolio img={card.img} />;
                         })}
