@@ -2,7 +2,7 @@ import React from "react";
 
 const SeparatorHero = () => {
     return (
-        <div className="w-full absolute bottom-0">
+        <div className="w-full -mb-1 absolute bottom-0">
             <svg
                 data-name="Layer 1"
                 xmlns="http://www.w3.org/2000/svg"

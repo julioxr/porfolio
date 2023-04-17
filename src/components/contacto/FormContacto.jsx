@@ -10,7 +10,7 @@ const FormContacto = () => {
     }
 
     return (
-        <div className="flex justify-center pb-24 pt-10">
+        <div className="flex justify-center pb-14 sm:pb-24">
             <form
                 onSubmit={handleSubmit}
                 className="w-[40rem] flex flex-col gap-2"
@@ -62,7 +62,7 @@ const FormContacto = () => {
                 <button
                     type="submit"
                     disabled={state.submitting}
-                    className="py-1 px-3 w-32 bg-night text-white rounded-full mt-2"
+                    className="h-12 text-lg sm:w-32 bg-night text-white rounded-full mt-2"
                 >
                     Submit
                 </button>

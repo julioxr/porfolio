@@ -2,7 +2,7 @@ import React from "react";
 
 const Waves = () => {
     return (
-        <div className="w-full absolute top-0">
+        <div className="w-full absolute -top-1">
             <svg
                 data-name="Layer 1"
                 xmlns="http://www.w3.org/2000/svg"

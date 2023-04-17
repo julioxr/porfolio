@@ -4,7 +4,7 @@ import { RiLinkedinBoxFill, RiGithubFill } from "react-icons/ri";
 
 const SocialsHero = () => {
     return (
-        <ul className="flex gap-4 text-2xl">
+        <ul className="flex gap-4 text-3xl">
             <li>
                 <Link
                     href="https://www.linkedin.com/in/julio-roja/"
