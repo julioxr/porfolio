@@ -12,7 +12,7 @@ const TextHero = () => {
                 , un apasionado desarrollador web que vive en Argentina, Buenos
                 Aires.
             </p>
-            <button className="md:py-1 md:px-3 py-2 px-4 w-32 bg-celadon text-night rounded-full sm:mt-2">
+            <button className="md:py-1 md:px-3 py-2 px-4 w-32 bg-celadon text-night rounded-full mt-2">
                 Contactame
             </button>
         </div>

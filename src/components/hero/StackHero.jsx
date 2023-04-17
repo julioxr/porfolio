@@ -69,7 +69,7 @@ const StackHero = () => {
                                 alt={name}
                                 width={45}
                                 height={45}
-                                className="w-9 sm:w-12"
+                                className="w-10 sm:w-12"
                                 key={name}
                             />
                         );
@@ -85,7 +85,7 @@ const StackHero = () => {
                                 alt={name}
                                 width={45}
                                 height={45}
-                                className="w-9 sm:w-12"
+                                className="w-10 sm:w-12"
                                 key={name}
                             />
                         );
