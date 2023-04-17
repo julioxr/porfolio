@@ -54,12 +54,12 @@ const StackHero = () => {
             initial={{ opacity: 0 }}
             transition={{ duration: 1 }}
             animate={{ opacity: 1 }}
-            className="sm:flex flex-col items-start justify-start w-full max-w-4xl px-8 sm:px-0"
+            className="flex flex-col items-start justify-start max-w-[350px] w-full sm:max-w-4xl"
         >
-            {/* <h2 className="font-bold sm:mb-4 mb-2 underline decoration-[2px]">
+            <h2 className="font-bold hidden sm:block sm:mb-4 mb-2 underline decoration-[2px]">
                 Stack Tecnológico
-            </h2> */}
-            <h2 className="font-semibold">Front</h2>
+            </h2>
+            <h2 className="font-semibold pb-1">Front</h2>
             <div className="flex flex-wrap gap-2 sm:gap-8 font-light sm:mt-2">
                 {frontTechnologies &&
                     frontTechnologies.map(({ src, name }) => {
@@ -75,7 +75,7 @@ const StackHero = () => {
                         );
                     })}
             </div>
-            <h2 className="font-semibold mt-2">Back</h2>
+            <h2 className="font-semibold mt-2 pb-1">Back</h2>
             <div className="flex flex-wrap gap-2 sm:gap-8 font-light sm:mt-2">
                 {backTechnologies &&
                     backTechnologies.map(({ src, name }) => {

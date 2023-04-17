@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const ImgHero = () => {
     return (
-        <div className="w-full px-6 mt-4 mb-4 sm:mt-0 sm:px-0 sm:w-[20rem] md:w-[30rem] h-auto">
+        <div className="w-full my-6 sm:mt-0 sm:px-0 sm:max-w-[20rem] md:max-w-[30rem]  max-w-[350px] h-auto">
             <Image
                 src="/heroImg.svg"
                 alt="imagen de hero, hombre en pc trabajando"

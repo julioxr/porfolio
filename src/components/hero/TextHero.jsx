@@ -2,8 +2,8 @@ import React from "react";
 
 const TextHero = () => {
     return (
-        <div className="flex flex-col justify-center gap-2 sm:gap-6 mb-4 sm:mb-0 px-8 sm:px-0 ">
-            <h1 className="text-4xl font-bold">Frontend developer</h1>
+        <div className="flex flex-col justify-center sm:mb-0 px-8 sm:px-0 ">
+            <h1 className="text-4xl font-bold mb-2">Frontend developer</h1>
             <p className="text-base max-w-[350px]">
                 Soy{" "}
                 <span className="font-bold decoration-[2px] underline-offset-2 text-celadon underline">
@@ -12,7 +12,7 @@ const TextHero = () => {
                 , un apasionado desarrollador web que vive en Argentina, Buenos
                 Aires.
             </p>
-            <button className="md:py-1 md:px-3 py-2 px-4 w-32 bg-celadon text-night rounded-full mt-2">
+            <button className="md:py-1 md:px-3 sm:w-52 bg-celadon text-night rounded-full my-6 text-lg h-14">
                 Contactame
             </button>
         </div>
