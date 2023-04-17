@@ -13,7 +13,7 @@ const MainHero = () => {
                 className=" sm:h-[calc(100vh-64px)] h-[calc(100vh-48px)] relative bg-[url('/ornament.svg')]"
                 id="inicio"
             >
-                <div className="container mx-auto flex flex-col justify-start items-center sm:pt-8 h-full">
+                <div className="container mx-auto flex flex-col px-8 sm:px-0 justify-start items-center sm:pt-8 h-full">
                     <motion.div
                         initial={{ y: -50, opacity: 0 }}
                         transition={{ duration: 1 }}

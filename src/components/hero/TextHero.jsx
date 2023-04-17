@@ -2,7 +2,7 @@ import React from "react";
 
 const TextHero = () => {
     return (
-        <div className="flex flex-col justify-center sm:mb-0 px-8 sm:px-0 ">
+        <div className="flex flex-col justify-center sm:mb-0 sm:px-0 ">
             <h1 className="text-4xl font-bold mb-2">Frontend developer</h1>
             <p className="text-base max-w-[350px]">
                 Soy{" "}
