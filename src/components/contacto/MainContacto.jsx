@@ -3,7 +3,7 @@ import FormContacto from "./FormContacto";
 const MainContacto = () => {
     return (
         <section
-            className="bg-celadon relative w-full text-night bg-[url('/ornament.svg')] px-8"
+            className="bg-celadon relative w-full text-night bg-[url('/ornament.svg')] px-8 overflow-x-hidden"
             id="contacto"
         >
             <div className="container mx-auto ">

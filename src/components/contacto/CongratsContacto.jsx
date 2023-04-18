@@ -17,10 +17,10 @@ const CongratsContacto = ({ error }) => {
             className={`${validatedStyle} absolute flex bottom-0 px-12 h-10 w-full rounded-sm items-center justify-center font-semibold left-0 right-0 `}
         >
             <motion.p
-                initial={{ x: -500 }}
+                initial={{ x: -1500 }}
                 animate={{ x: 0 }}
-                exit={{ x: 500 }}
-                transition={{ duration: 0.3 }}
+                exit={{ x: 1500 }}
+                transition={{ duration: 1, type: "spring" }}
             >
                 {error
                     ? "Los campos no pueden estar vacios"

@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import Waves from "../waves/Waves";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const MainInfo = () => {
     return (
@@ -17,35 +19,61 @@ const MainInfo = () => {
                         />
                     </div>
                     <div className="flex flex-col gap-3 md:w-[40rem]">
-                        <h4 className="abbsolute md:-ml-28 sm:w-full z-10 font-bold text-5xl text-white bg-celadon px-4">
-                            SOBRE MI
-                        </h4>
+                        <div className="bg-celadon md:-ml-28 md:mr-28">
+                            <motion.h4
+                                initial={{ x: 500, opacity: 0 }}
+                                whileInView={{ x: 0, opacity: 1 }}
+                                transition={{ duration: 1 }}
+                                viewport={{ once: true }}
+                                className="abbsolute sm:w-full z-10 font-bold text-5xl text-white px-4"
+                            >
+                                SOBRE MI
+                            </motion.h4>
+                        </div>
                         <h2 className="font-bold underline decoration-[2px] px-8">
                             Un desarrollador Front End dedicado
                         </h2>
-                        <p className="text-sm text-gray-500 px-8 md:px-0">
+                        <motion.p
+                            initial={{ x: -200, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: true }}
+                            className="text-sm text-gray-500 px-8 md:px-0"
+                        >
                             ¡Hola! Soy un desarrollador frontend con amplias
                             habilidades en tecnologías como Next.js, React,
                             JavaScript, Tailwind y Firebase, las cuales utilizo
                             a diario en mi trabajo. También tengo experiencia en
                             tecnologías de backend como NodeJS, Express, MongoDB
                             y MySQL.
-                        </p>
-                        <p className="text-sm text-gray-500 px-8 md:px-0">
+                        </motion.p>
+                        <motion.p
+                            initial={{ x: -200, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: true }}
+                            className="text-sm text-gray-500 px-8 md:px-0"
+                        >
                             Hace 2 años decidí incursionar en el desarrollo web
                             y desde entonces he demostrado ser un autodidacta
                             apasionado por aprender y mejorar constantemente.
                             Actualmente, trabajo como QA hace 6 años, lo que me
                             ha brindado una visión más completa y crítica sobre
                             el desarrollo de software.
-                        </p>
-                        <p className="text-sm text-gray-500 px-8 md:px-0">
+                        </motion.p>
+                        <motion.p
+                            initial={{ x: -200, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            transition={{ duration: 1 }}
+                            viewport={{ once: true }}
+                            className="text-sm text-gray-500 px-8 md:px-0"
+                        >
                             Soy una persona con iniciativa y orientada a
                             resultados, siempre dispuesto a colaborar con mi
                             equipo y brindar ayuda a quienes lo necesitan. Me
                             gusta enseñar y compartir mis conocimientos para
                             ayudar a los demás a crecer y mejorar.
-                        </p>
+                        </motion.p>
                     </div>
                 </div>
             </div>
