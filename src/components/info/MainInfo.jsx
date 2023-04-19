@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const MainInfo = () => {
     return (
-        <section className="pt-20 relative h-auto" id="sobre-mi">
+        <section className="pt-28 sm:pt-20 relative h-auto" id="sobre-mi">
             <div className="container mx-auto flex justify-center pb-10 sm:py-20 w-full">
                 <div className="max-w-4xl flex flex-col md:flex-row w-full gap-8 items-center">
                     <div className="z-20">
@@ -19,12 +19,10 @@ const MainInfo = () => {
                         />
                     </div>
                     <div className="flex flex-col gap-3 md:w-[40rem]">
-                        <div className="bg-celadon md:-ml-28 md:mr-28">
-                            <motion.h4 className="abbsolute sm:w-full z-10 font-bold text-5xl text-white px-4">
-                                SOBRE MI
-                            </motion.h4>
-                        </div>
-                        <h2 className="font-bold underline decoration-[2px] px-8">
+                        <motion.h4 className="absolute top-16 md-top-16 left-4 sm:left-11 sm:text-[9rem]  z-10 font-bold text-5xl text-celadon text-[4rem] -rotate-2">
+                            SOBRE MI
+                        </motion.h4>
+                        <h2 className="font-bold text-lg underline underline-offset-2 decoration-[2px] px-8">
                             Un desarrollador Front End dedicado
                         </h2>
                         <motion.p

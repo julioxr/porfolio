@@ -29,18 +29,18 @@ const cards = [
 const MainPortfolio = () => {
     return (
         <section
-            className="h-auto pb-4 sm:pb-32 pt-16 sm:pt-44 bg-celadon relative"
+            className="h-auto pb-4 sm:pb-32 pt-24 sm:pt-44 bg-celadon relative"
             id="proyectos"
         >
             <div className="">
                 <div>
-                    <div className="z-10">
+                    <div className="z-10 -rotate-2">
                         <motion.h2
                             initial={{ x: -100, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}
                             transition={{ duration: 0.5 }}
                             viewport={{ once: true }}
-                            className="font-bold mb-4 text-[4rem] sm:text-[15rem] absolute -top-1 sm:-top-20 left-0 sm:left-10 text-white"
+                            className="font-bold -mt-20 sm:-mt-[6.5rem] mb-4 text-[4rem] sm:text-[9rem] absolute -top-1 sm:-top-20 left-4 sm:left-10 text-white"
                         >
                             PROYECTOS
                         </motion.h2>
