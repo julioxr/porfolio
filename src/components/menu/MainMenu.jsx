@@ -10,30 +10,30 @@ const MainMenu = () => {
                     Julio.dev
                 </div>
                 <div className="hidden md:block h-full">
-                    <ul className="list-none gap-6 flex font-medium items-center h-full">
+                    <ul className="list-none gap-6 flex text-lg font-medium items-center h-full">
                         <motion.li
-                            whileHover={{ scale: 1.2 }}
+                            whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 1 }}
                             className="hover:text-celadon border-celadon decoration-celadon p-2"
                         >
                             <a href="#inicio">Inicio</a>
                         </motion.li>
                         <motion.li
-                            whileHover={{ scale: 1.2 }}
+                            whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 1 }}
                             className="hover:text-celadon border-celadon decoration-celadon"
                         >
                             <a href="#proyectos">Proyectos</a>
                         </motion.li>
                         <motion.li
-                            whileHover={{ scale: 1.2 }}
+                            whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 1 }}
                             className="hover:text-celadon border-celadon decoration-celadon"
                         >
                             <a href="#sobre-mi">Sobre mi</a>
                         </motion.li>
                         <motion.li
-                            whileHover={{ scale: 1.2 }}
+                            whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 1 }}
                             className="hover:text-celadon border-celadon decoration-celadon"
                         >
