@@ -20,13 +20,7 @@ const MainInfo = () => {
                     </div>
                     <div className="flex flex-col gap-3 md:w-[40rem]">
                         <div className="bg-celadon md:-ml-28 md:mr-28">
-                            <motion.h4
-                                initial={{ x: 500, opacity: 0 }}
-                                whileInView={{ x: 0, opacity: 1 }}
-                                transition={{ duration: 1 }}
-                                viewport={{ once: true }}
-                                className="abbsolute sm:w-full z-10 font-bold text-5xl text-white px-4"
-                            >
+                            <motion.h4 className="abbsolute sm:w-full z-10 font-bold text-5xl text-white px-4">
                                 SOBRE MI
                             </motion.h4>
                         </div>
@@ -34,8 +28,8 @@ const MainInfo = () => {
                             Un desarrollador Front End dedicado
                         </h2>
                         <motion.p
-                            initial={{ x: -200, opacity: 0 }}
-                            whileInView={{ x: 0, opacity: 1 }}
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
                             transition={{ duration: 1 }}
                             viewport={{ once: true }}
                             className="text-sm text-gray-500 px-8 md:px-0"
@@ -48,8 +42,8 @@ const MainInfo = () => {
                             y MySQL.
                         </motion.p>
                         <motion.p
-                            initial={{ x: -200, opacity: 0 }}
-                            whileInView={{ x: 0, opacity: 1 }}
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
                             transition={{ duration: 1 }}
                             viewport={{ once: true }}
                             className="text-sm text-gray-500 px-8 md:px-0"
@@ -62,8 +56,8 @@ const MainInfo = () => {
                             el desarrollo de software.
                         </motion.p>
                         <motion.p
-                            initial={{ x: -200, opacity: 0 }}
-                            whileInView={{ x: 0, opacity: 1 }}
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
                             transition={{ duration: 1 }}
                             viewport={{ once: true }}
                             className="text-sm text-gray-500 px-8 md:px-0"
