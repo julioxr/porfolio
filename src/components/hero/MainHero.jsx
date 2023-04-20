@@ -10,7 +10,7 @@ const MainHero = () => {
     return (
         <>
             <section
-                className=" sm:h-[calc(100vh-64px)] h-[calc(100vh-48px)] relative bg-[url('/ornament.svg')]"
+                className=" sm:h-[calc(100vh-64px)] h-[calc(100vh-48px)] relative bg-[url('/fondo.svg')]"
                 id="inicio"
             >
                 <div className="container mx-auto flex flex-col px-8 sm:px-0 justify-start items-center sm:pt-8 h-full">

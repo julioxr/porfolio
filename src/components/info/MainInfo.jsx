@@ -3,11 +3,12 @@ import React from "react";
 import Waves from "../waves/Waves";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import WavesContacto from "../contacto/WavesContacto";
 
 const MainInfo = () => {
     return (
         <section className="pt-28 sm:pt-20 relative h-auto" id="sobre-mi">
-            <div className="container mx-auto flex justify-center pb-10 sm:py-20 w-full">
+            <div className="container mx-auto flex justify-center pb-10 sm:pt-20 sm:pb-32 w-full">
                 <div className="max-w-4xl flex flex-col md:flex-row w-full gap-8 items-center">
                     <div className="z-20">
                         <Image
@@ -19,7 +20,7 @@ const MainInfo = () => {
                         />
                     </div>
                     <div className="flex flex-col gap-3 md:w-[40rem]">
-                        <motion.h4 className="absolute top-16 md-top-16 left-4 sm:left-11 sm:text-[9rem]  z-10 font-bold text-5xl text-celadon text-[4rem] -rotate-2">
+                        <motion.h4 className="absolute top-7 left-4 sm:left-11 sm:text-[9rem] z-10 font-bold text-celadon text-[4rem] -rotate-2">
                             SOBRE MI
                         </motion.h4>
                         <h2 className="font-bold text-lg underline underline-offset-2 decoration-[2px] px-8">
@@ -70,6 +71,7 @@ const MainInfo = () => {
                 </div>
             </div>
             <Waves />
+            <WavesContacto />
         </section>
     );
 };

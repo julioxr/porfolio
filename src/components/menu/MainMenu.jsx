@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const MainMenu = () => {
     return (
         <header className="">
-            <div className="flex justify-between items-center container mx-auto h-12 sm:h-16 px-8 sm:px-0">
+            <div className="flex justify-between items-center container mx-auto h-12 sm:h-16 px-8 sm:px-0 gap-8">
                 <div className="font-bold text-2xl sm:text-3xl mr-auto text-night">
                     Julio.dev
                 </div>
@@ -41,7 +41,7 @@ const MainMenu = () => {
                         </motion.li>
                     </ul>
                 </div>
-                <button className="hidden md:static py-1 px-3 bg-celadon w-32 text-night rounded-full">
+                <button className="hidden md:block py-1 px-3 bg-celadon w-32 text-night rounded-full">
                     Descargar CV
                 </button>
             </div>

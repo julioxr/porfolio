@@ -1,16 +1,28 @@
 import FormContacto from "./FormContacto";
+import Image from "next/image";
+import WavesContacto from "./WavesContacto";
 
 const MainContacto = () => {
     return (
         <section
-            className="bg-celadon relative w-full text-night bg-[url('/ornament.svg')] px-8 overflow-x-hidden"
+            className="bg-night relative w-full text-night bg-[url('/fondodos.svg')] px-8 overflow-x-hidden"
             id="contacto"
         >
-            <div className="container mx-auto ">
-                <h2 className="font-bold text-5xl py-6 sm:py-10 text-white text-center">
-                    CONTACTAME
-                </h2>
-                <FormContacto />
+            <h2 className="absolute -top-0 left-4 sm:left-11 sm:text-[9rem] z-10 font-bold text-white text-[4rem] -rotate-2">
+                CONTACTAME
+            </h2>
+            <div className="flex container mx-auto w-full justify-between items-center max-w-4xl gap-8">
+                <div className="w-full md:w-1/2 z-30">
+                    <FormContacto />
+                </div>
+                <div className="w-1/2 my-6 hidden sm:block sm:max-w-[20rem] md:max-w-[30rem] h-auto z-30">
+                    <Image
+                        src="/contacto.svg"
+                        alt="Imagen de contacto con persona hablando"
+                        width={800}
+                        height={800}
+                    />
+                </div>
             </div>
         </section>
     );
