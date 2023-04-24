@@ -8,7 +8,7 @@ const MainContacto = () => {
             className="bg-night relative w-full text-night bg-[url('/fondodos.svg')] px-8 overflow-x-hidden"
             id="contacto"
         >
-            <h2 className="absolute -top-0 left-4 sm:left-11 sm:text-[9rem] z-10 font-bold text-white text-[4rem] -rotate-2">
+            <h2 className="absolute -top-0 left-4 sm:left-11 sm:text-[9rem] z-10 font-bold text-white text-[3.5rem] -rotate-2">
                 CONTACTAME
             </h2>
             <div className="flex container mx-auto w-full justify-between items-center max-w-4xl gap-8">

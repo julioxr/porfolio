@@ -12,8 +12,9 @@ const TextHero = () => {
             }, 500); // Duración de la animación de shake (en milisegundos)
         }, 6000); // Intervalo de tiempo para activar el shake (en milisegundos)
     }, []);
+
     return (
-        <div className="flex flex-col justify-center sm:mb-0 sm:px-0 ">
+        <div className="flex flex-col justify-center sm:mb-0 sm:px-0 text-center md:text-start">
             <h1 className="text-4xl font-bold mb-2">Frontend developer</h1>
             <p className="text-base max-w-[350px]">
                 Soy{" "}
@@ -36,9 +37,9 @@ const TextHero = () => {
                         },
                     },
                 }}
-                className="md:py-1 md:px-3 w-60 self-center sm:self-start sm:w-52 bg-celadon text-white font-semibold rounded-full my-6 text-lg h-14"
+                className="md:py-1 md:px-3 w-60 self-center md:self-start sm:w-52 bg-celadon text-white font-semibold rounded-full my-6 text-lg h-14"
             >
-                Contactame
+                <a href="#contacto">Contactame</a>
             </motion.button>
         </div>
     );

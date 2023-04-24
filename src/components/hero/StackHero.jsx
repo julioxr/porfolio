@@ -54,13 +54,13 @@ const StackHero = () => {
             initial={{ opacity: 0 }}
             transition={{ duration: 1 }}
             animate={{ opacity: 1 }}
-            className="flex flex-col items-start justify-start max-w-[350px] w-full sm:max-w-4xl"
+            className="flex flex-col items-start justify-start max-w-[350px] w-full sm:w-auto"
         >
-            <h2 className="font-bold hidden sm:block sm:mb-4 mb-2 underline decoration-[2px]">
+            {/* <h2 className="font-bold hidden sm:block sm:mb-4 mb-2 underline decoration-[2px]">
                 Stack Tecnológico
-            </h2>
+            </h2> */}
             <h2 className="font-semibold pb-1">Front</h2>
-            <div className="flex flex-wrap gap-2 sm:gap-8 font-light sm:mt-2">
+            <div className="flex flex-wrap gap-2 sm:gap-4 font-light sm:mt-2">
                 {frontTechnologies &&
                     frontTechnologies.map(({ src, name }) => {
                         return (
@@ -69,14 +69,14 @@ const StackHero = () => {
                                 alt={name}
                                 width={45}
                                 height={45}
-                                className="w-10 sm:w-12"
+                                className="w-10"
                                 key={name}
                             />
                         );
                     })}
             </div>
             <h2 className="font-semibold mt-2 pb-1">Back</h2>
-            <div className="flex flex-wrap gap-2 sm:gap-8 font-light sm:mt-2">
+            <div className="flex flex-wrap gap-2 sm:gap-4 font-light sm:mt-2">
                 {backTechnologies &&
                     backTechnologies.map(({ src, name }) => {
                         return (
@@ -85,7 +85,7 @@ const StackHero = () => {
                                 alt={name}
                                 width={45}
                                 height={45}
-                                className="w-10 sm:w-12"
+                                className="w-10"
                                 key={name}
                             />
                         );
