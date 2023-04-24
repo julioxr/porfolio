@@ -11,7 +11,7 @@ const MainContacto = () => {
             <h2 className="absolute -top-0 left-4 sm:left-11 sm:text-[9rem] z-10 font-bold text-white text-[3.5rem] -rotate-2">
                 CONTACTAME
             </h2>
-            <div className="flex container mx-auto w-full justify-between items-center max-w-4xl gap-8">
+            <div className="flex container mx-auto w-full justify-between items-center max-w-5xl gap-8 ">
                 <div className="w-full md:w-1/2 z-30">
                     <FormContacto />
                 </div>

@@ -13,12 +13,12 @@ const MainHero = () => {
                 className=" sm:h-[calc(100vh-64px)] h-[calc(100vh-48px)] relative bg-[url('/fondo.svg')]"
                 id="inicio"
             >
-                <div className="container mx-auto flex flex-col-reverse md:flex-row px-8 sm:px-0 justify-end md:justify-center items-center sm:pt-0 h-full md:max-w-6xl">
+                <div className="container mx-auto flex flex-col-reverse md:flex-row px-8 sm:px-0 justify-end md:justify-center items-center sm:pt-0 h-full sm:h-[calc(100%-100px)] md:max-w-5xl">
                     <motion.div
                         initial={{ y: -50, opacity: 0 }}
                         transition={{ duration: 1 }}
                         animate={{ y: 0, opacity: 1 }}
-                        className="flex sm:flex-col flex-col justify-center items-center w-full"
+                        className="flex sm:flex-col flex-col justify-center items-center md:items-start md:mx-auto w-full "
                     >
                         <TextHero />
                         <StackHero />

@@ -14,8 +14,13 @@ const TextHero = () => {
     }, []);
 
     return (
-        <div className="flex flex-col justify-center sm:mb-0 sm:px-0 text-center md:text-start">
-            <h1 className="text-4xl font-bold mb-2">Frontend developer</h1>
+        <div
+            className="flex flex-col justify-center sm:mb-0 sm:px-0 text-center md:text-start max-w-none
+        "
+        >
+            <h1 className="text-4xl md:text-5xl font-bold mb-2">
+                Frontend developer
+            </h1>
             <p className="text-base max-w-[350px]">
                 Soy{" "}
                 <span className="font-bold decoration-[2px] underline-offset-2 text-celadon underline">

@@ -53,8 +53,9 @@ const StackHero = () => {
         <motion.div
             initial={{ opacity: 0 }}
             transition={{ duration: 1 }}
+            d
             animate={{ opacity: 1 }}
-            className="flex flex-col items-start justify-start max-w-[350px] w-full sm:w-auto"
+            className="flex flex-col items-start justify-start max-w-[350px] w-full sm:w-auto "
         >
             {/* <h2 className="font-bold hidden sm:block sm:mb-4 mb-2 underline decoration-[2px]">
                 Stack Tecnológico
