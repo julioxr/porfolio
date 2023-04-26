@@ -53,42 +53,48 @@ const StackHero = () => {
         <motion.div
             initial={{ opacity: 0 }}
             transition={{ duration: 1 }}
-            d
             animate={{ opacity: 1 }}
-            className="flex flex-col items-start justify-start max-w-[350px] w-full sm:w-auto "
+            className="flex flex-col items-start justify-start w-full"
         >
-            {/* <h2 className="font-bold hidden sm:block sm:mb-4 mb-2 underline decoration-[2px]">
-                Stack Tecnológico
-            </h2> */}
             <h2 className="font-semibold pb-1">Front</h2>
-            <div className="flex flex-wrap gap-2 sm:gap-4 font-light sm:mt-2">
+            <div className="flex gap-3 sm:gap-4 font-light sm:mt-2">
                 {frontTechnologies &&
                     frontTechnologies.map(({ src, name }) => {
                         return (
-                            <Image
-                                src={src}
-                                alt={name}
-                                width={45}
-                                height={45}
-                                className="w-10"
-                                key={name}
-                            />
+                            <>
+                                <div className="flex flex-col w-12 items-center text-xs">
+                                    <Image
+                                        src={src}
+                                        alt={name}
+                                        width={45}
+                                        height={45}
+                                        className="w-10"
+                                        key={name}
+                                    />
+                                    <h2>{name}</h2>
+                                </div>
+                            </>
                         );
                     })}
             </div>
             <h2 className="font-semibold mt-2 pb-1">Back</h2>
-            <div className="flex flex-wrap gap-2 sm:gap-4 font-light sm:mt-2">
+            <div className="flex gap-3 sm:gap-4 justify-between font-light sm:mt-2">
                 {backTechnologies &&
                     backTechnologies.map(({ src, name }) => {
                         return (
-                            <Image
-                                src={src}
-                                alt={name}
-                                width={45}
-                                height={45}
-                                className="w-10"
-                                key={name}
-                            />
+                            <>
+                                <div className="flex flex-col w-12 items-center text-xs">
+                                    <Image
+                                        src={src}
+                                        alt={name}
+                                        width={45}
+                                        height={45}
+                                        className="w-10"
+                                        key={name}
+                                    />
+                                    <h2>{name}</h2>
+                                </div>
+                            </>
                         );
                     })}
             </div>

@@ -8,7 +8,7 @@ import WavesContacto from "../contacto/WavesContacto";
 const MainInfo = () => {
     return (
         <section
-            className="pt-28 sm:pt-20 md:pt-40 md:pb-24 relative h-auto"
+            className="pt-24 sm:pt-20 md:pt-40 md:pb-24 relative h-auto"
             id="sobre-mi"
         >
             <div className="container mx-auto flex justify-center pb-10 sm:pt-20 sm:pb-32 w-full">
@@ -23,13 +23,13 @@ const MainInfo = () => {
                         />
                     </div>
                     <div className="flex flex-col gap-3 md:w-[40rem]">
-                        <motion.h4 className="absolute top-24 left-4 sm:left-11 sm:text-[9rem] z-10 font-bold text-celadon text-[4rem] -rotate-2">
+                        <motion.h4 className="absolute top-8 sm:top-14 left-4 sm:left-11 sm:text-[6rem] md:text-[9rem] z-10 font-bold text-celadon text-[4rem] -rotate-2 lg:top-20">
                             SOBRE MI
                         </motion.h4>
                         <h2 className="font-bold text-lg underline underline-offset-2 decoration-[2px] px-8 md:px-0">
                             Un desarrollador Front End dedicado
                         </h2>
-                        <div className="flex gap-4 flex-col w-full">
+                        <div className="flex gap-4 flex-col w-full pb-8 sm:pb-0">
                             <motion.p
                                 initial={{ opacity: 0 }}
                                 whileInView={{ opacity: 1 }}
