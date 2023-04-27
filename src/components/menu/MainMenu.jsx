@@ -4,7 +4,11 @@ import { motion } from "framer-motion";
 
 const MainMenu = () => {
     return (
-        <header className="">
+        <motion.header
+            initial={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+            animate={{ opacity: 1 }}
+        >
             <div className="flex justify-between items-center container mx-auto h-12 sm:h-16 px-8 sm:px-0 gap-8">
                 <div className="font-bold text-2xl sm:text-3xl mr-auto text-night">
                     Julio.dev
@@ -45,7 +49,7 @@ const MainMenu = () => {
                     Descargar CV
                 </button>
             </div>
-        </header>
+        </motion.header>
     );
 };
 
