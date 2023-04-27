@@ -3,6 +3,11 @@ import { useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { AnimatePresence } from "framer-motion";
 import CongratsContacto from "./CongratsContacto";
+import {
+    BsFillPersonFill,
+    BsFillSendCheckFill,
+    BsFillEnvelopeAtFill,
+} from "react-icons/bs";
 
 const FormContacto = () => {
     const [state, handleSubmit] = useForm("xvonvajk");
@@ -46,18 +51,23 @@ const FormContacto = () => {
                 {/* <label htmlFor="name" className="font-semibold z-30">
                     Nombre
                 </label> */}
-                <input
-                    id="name"
-                    type="name"
-                    name="nombre"
-                    placeholder="Nombre"
-                    autoComplete="none"
-                    className="w-full placeholder-white/70 z-30 rounded-sm h-10 pl-4 appearance-none font-medium focus:outline-celadon outline-white bg-night/50 text-white text-lg outline-2 outline"
-                    onChange={(e) => {
-                        setName(e.target.value);
-                    }}
-                    value={name}
-                />
+                <div className="relative">
+                    <div className="flex w-10">
+                        <BsFillPersonFill className="text-white absolute h-full text-2xl left-2" />
+                    </div>
+                    <input
+                        id="name"
+                        type="name"
+                        name="nombre"
+                        placeholder="Nombre"
+                        autoComplete="none"
+                        className="w-full placeholder-white/70 z-30 rounded-sm h-10 pl-12 appearance-none font-medium focus:outline-celadon outline-white bg-night/50 text-white text-lg outline-2 outline"
+                        onChange={(e) => {
+                            setName(e.target.value);
+                        }}
+                        value={name}
+                    />
+                </div>
                 <ValidationError
                     prefix="Name"
                     field="name"
@@ -67,18 +77,23 @@ const FormContacto = () => {
                 {/* <label htmlFor="email" className="font-semibold">
                     Email
                 </label> */}
-                <input
-                    id="email"
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                    autoComplete="none"
-                    className="w-full placeholder-white/70 rounded-sm h-10 pl-4 text-lg appearance-none font-medium focus:outline-celadon outline-white bg-night/50 text-white outline-2 outline"
-                    onChange={(e) => {
-                        setEmail(e.target.value);
-                    }}
-                    value={email}
-                />
+                <div className="relative">
+                    <div className="flex w-10">
+                        <BsFillEnvelopeAtFill className="text-white absolute h-full text-2xl left-2" />
+                    </div>
+                    <input
+                        id="email"
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                        autoComplete="none"
+                        className="w-full placeholder-white/70 rounded-sm h-10 pl-12 text-lg appearance-none font-medium focus:outline-celadon outline-white bg-night/50 text-white outline-2 outline"
+                        onChange={(e) => {
+                            setEmail(e.target.value);
+                        }}
+                        value={email}
+                    />
+                </div>
                 <ValidationError
                     prefix="Email"
                     field="email"
@@ -89,17 +104,22 @@ const FormContacto = () => {
                     Mensaje
                 </label> */}
 
-                <textarea
-                    id="message"
-                    name="mensaje"
-                    placeholder="Mensaje"
-                    autoComplete="none"
-                    className="w-full h-32 placeholder-white/70 text-lg rounded-sm pl-4 pt-2 appearance-none font-medium focus:outline-celadon outline-white bg-night/50 text-white outline-2 outline"
-                    onChange={(e) => {
-                        setMessage(e.target.value);
-                    }}
-                    value={message}
-                />
+                <div className="relative">
+                    <div className="flex w-10 h-auto absolute top-2 left-2">
+                        <BsFillSendCheckFill className="text-white text-2xl left-0 top-0" />
+                    </div>
+                    <textarea
+                        id="message"
+                        name="mensaje"
+                        placeholder="Mensaje"
+                        autoComplete="none"
+                        className="w-full h-32 placeholder-white/70 text-lg rounded-sm pl-12 pt-1 appearance-none font-medium focus:outline-celadon outline-white bg-night/50 text-white outline-2 outline"
+                        onChange={(e) => {
+                            setMessage(e.target.value);
+                        }}
+                        value={message}
+                    />
+                </div>
                 <ValidationError
                     prefix="Message"
                     field="message"
