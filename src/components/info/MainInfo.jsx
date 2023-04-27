@@ -35,7 +35,7 @@ const MainInfo = () => {
                                 whileInView={{ opacity: 1 }}
                                 transition={{ duration: 1 }}
                                 viewport={{ once: true }}
-                                className="text-sm text-gray-500 px-8 md:px-0"
+                                className="text-sm sm:text-base text-gray-500 px-8 md:px-0"
                             >
                                 ¡Hola! Soy un desarrollador frontend con amplias
                                 habilidades en tecnologías como Next.js, React,
@@ -49,7 +49,7 @@ const MainInfo = () => {
                                 whileInView={{ opacity: 1 }}
                                 transition={{ duration: 1 }}
                                 viewport={{ once: true }}
-                                className="text-sm text-gray-500 px-8 md:px-0"
+                                className="text-sm sm:text-base text-gray-500 px-8 md:px-0"
                             >
                                 Hace 2 años decidí incursionar en el desarrollo
                                 web y desde entonces he demostrado ser un
@@ -64,7 +64,7 @@ const MainInfo = () => {
                                 whileInView={{ opacity: 1 }}
                                 transition={{ duration: 1 }}
                                 viewport={{ once: true }}
-                                className="text-sm text-gray-500 px-8 md:px-0"
+                                className="text-sm sm:text-base text-gray-500 px-8 md:px-0"
                             >
                                 Soy una persona con iniciativa y orientada a
                                 resultados, siempre dispuesto a colaborar con mi

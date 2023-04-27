@@ -21,7 +21,7 @@ const TextHero = () => {
             <h1 className="text-4xl md:text-5xl font-bold mb-2">
                 Frontend developer
             </h1>
-            <p className="text-base max-w-[350px]">
+            <p className="md:text-lg max-w-[350px] md:max-w-sm">
                 Soy{" "}
                 <span className="font-bold decoration-[2px] underline-offset-2 text-celadon underline">
                     Julio Roja

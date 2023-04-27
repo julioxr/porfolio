@@ -12,7 +12,7 @@ const cards = [
     {
         id: 2,
         title: "Portfolio",
-        img: "/portfolio.jpeg",
+        img: "/portfolio.jpg",
     },
     {
         id: 3,

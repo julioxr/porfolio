@@ -16,11 +16,7 @@ const frontTechnologies = [
         src: "/stack/js.svg",
     },
     {
-        name: "TypeScript",
-        src: "/stack/ts.svg",
-    },
-    {
-        name: "TailwindCSS",
+        name: "Tailwind",
         src: "/stack/tailwind.svg",
     },
     {
@@ -62,7 +58,7 @@ const StackHero = () => {
                     frontTechnologies.map(({ src, name }) => {
                         return (
                             <>
-                                <div className="flex flex-col w-12 items-center text-xs">
+                                <div className="flex flex-col w-12 items-center text-xs font-bold">
                                     <Image
                                         src={src}
                                         alt={name}
@@ -83,7 +79,7 @@ const StackHero = () => {
                     backTechnologies.map(({ src, name }) => {
                         return (
                             <>
-                                <div className="flex flex-col w-12 items-center text-xs">
+                                <div className="flex flex-col w-12 items-center text-xs font-bold">
                                     <Image
                                         src={src}
                                         alt={name}
