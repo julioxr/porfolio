@@ -17,13 +17,20 @@ const MainHero = () => {
                     <motion.div
                         initial={{ y: -50, opacity: 0 }}
                         transition={{ duration: 1 }}
-                        animate={{ y: 0, opacity: 1 }}
+                        animate={{ y: 0.2, opacity: 1 }}
                         className="flex sm:flex-col flex-col justify-center items-center md:items-start md:mx-auto w-full "
                     >
                         <TextHero />
                         <StackHero />
                     </motion.div>
-                    <ImgHero />
+                    <motion.div
+                        initial={{ y: -50, opacity: 0 }}
+                        transition={{ duration: 1 }}
+                        animate={{ y: 0.2, opacity: 1 }}
+                        className="flex justify-center sm:w-full"
+                    >
+                        <ImgHero />
+                    </motion.div>
                 </div>
                 <SeparatorHero />
             </section>
