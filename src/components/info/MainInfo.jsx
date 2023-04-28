@@ -23,7 +23,13 @@ const MainInfo = () => {
                         />
                     </div>
                     <div className="flex flex-col gap-3 md:w-[40rem]">
-                        <motion.h4 className="absolute top-8 sm:top-14 left-4 sm:left-11 sm:text-[6rem] md:text-[9rem] z-10 font-bold text-celadon text-[4rem] -rotate-2 lg:top-20">
+                        <motion.h4
+                            initial={{ x: -100, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            transition={{ duration: 0.5 }}
+                            viewport={{ once: true }}
+                            className="absolute top-8 sm:top-16 left-4 sm:left-11 sm:text-[6rem] md:text-[9rem] z-10 font-bold text-celadon text-[4rem] lg:top-20"
+                        >
                             SOBRE MI
                         </motion.h4>
                         <h2 className="font-bold text-lg underline underline-offset-2 decoration-[2px] px-8 md:px-0">
