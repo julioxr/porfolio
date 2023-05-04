@@ -18,7 +18,7 @@ const MainMenu = () => {
                         <motion.li
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 1 }}
-                            className="hover:text-celadon border-celadon decoration-celadon p-2"
+                            className="hover:text-celadon border-celadon decoration-celadon"
                         >
                             <a href="#inicio">Inicio</a>
                         </motion.li>

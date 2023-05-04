@@ -1,6 +1,7 @@
 import MainMenu from "@/components/menu/MainMenu";
 import Head from "next/head";
 import "./globals.css";
+import BurgerMenu from "@/components/menu/BurgerMenu";
 
 export const metadata = {
     title: "Portfolio | Julio Roja",
@@ -14,7 +15,8 @@ export default function RootLayout({ children }) {
                 <link rel="icon" href="/julioLogo.png" />
             </Head>
             <body className="text-night overflow-x-hidden">
-                <MainMenu />
+                <BurgerMenu />
+                {/* <MainMenu /> */}
                 <main>{children}</main>
             </body>
         </html>
