@@ -46,7 +46,9 @@ const MainMenu = () => {
                     </ul>
                 </div>
                 <button className="hidden md:block py-1 px-3 bg-celadon w-32 text-night rounded-full">
-                    Descargar CV
+                    <a href="/cv/CV_JULIO_ROJA.pdf" download>
+                        Descargar CV
+                    </a>
                 </button>
             </div>
         </motion.header>
