@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const MainMenu = () => {
+const MainMenuHeader = () => {
     return (
         <motion.header
             initial={{ opacity: 0 }}
@@ -55,4 +55,4 @@ const MainMenu = () => {
     );
 };
 
-export default MainMenu;
+export default MainMenuHeader;

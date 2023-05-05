@@ -16,7 +16,7 @@ const TextHero = () => {
     return (
         <div className="flex flex-col justify-center sm:mb-0 sm:px-0 text-center md:text-start max-w-none">
             <motion.h1
-                initial={{ y: -50, opacity: 0 }}
+                initial={{ y: -20, opacity: 0 }}
                 transition={{ duration: 0.3 }}
                 animate={{ y: 0.4, opacity: 1 }}
                 className="text-4xl md:text-5xl font-bold mb-2"
@@ -24,7 +24,7 @@ const TextHero = () => {
                 Frontend developer
             </motion.h1>
             <motion.p
-                initial={{ y: -50, opacity: 0 }}
+                initial={{ y: -20, opacity: 0 }}
                 transition={{ duration: 0.3, delay: 0.2 }}
                 animate={{ y: 0.4, opacity: 1 }}
                 className="md:text-lg max-w-[350px] md:max-w-sm"

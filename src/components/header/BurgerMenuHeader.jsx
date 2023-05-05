@@ -1,15 +1,19 @@
 "use client";
 import { motion } from "framer-motion";
+import { GrMenu } from "react-icons/gr";
 
-const BurgerMenu = () => {
+const BurgerMenuHeader = () => {
     return (
         <section
-            // initial={{ opacity: 0 }}
-            // transition={{ duration: 1 }}
-            // animate={{ opacity: 1 }}
-            className="fixed top-0 left-0 bottom-0 right-0 bg-celadon z-40"
+            initial={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+            animate={{ opacity: 0 }}
+            className="fixed bg-celadon z-40 min-h-screen h-auto w-full shadow-xl shadow-night/20 overflow-hidden"
         >
-            <div className="flex items-center justify-center h-full flex-col container gap-20 z-50">
+            <div className="absolute right-8 top-8 text-3xl">
+                <GrMenu />
+            </div>
+            <div className="min-h-screen flex items-center pb-40 justify-center flex-col gap-8">
                 <ul className="list-none gap-8 flex flex-col text-2xl font-medium items-center">
                     <motion.li
                         whileHover={{ scale: 1.1 }}
@@ -50,4 +54,4 @@ const BurgerMenu = () => {
     );
 };
 
-export default BurgerMenu;
+export default BurgerMenuHeader;
