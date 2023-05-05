@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import { GrMenu } from "react-icons/gr";
 
 const BurgerMenuHeader = () => {
     return (
@@ -10,9 +9,6 @@ const BurgerMenuHeader = () => {
             animate={{ opacity: 0 }}
             className="fixed bg-celadon z-40 min-h-screen h-auto w-full shadow-xl shadow-night/20 overflow-hidden"
         >
-            <div className="absolute right-8 top-8 text-3xl">
-                <GrMenu />
-            </div>
             <div className="min-h-screen flex items-center pb-40 justify-center flex-col gap-8">
                 <ul className="list-none gap-8 flex flex-col text-2xl font-medium items-center">
                     <motion.li
