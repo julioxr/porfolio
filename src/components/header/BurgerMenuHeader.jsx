@@ -40,7 +40,7 @@ const BurgerMenuHeader = () => {
                         <a href="#contacto">Contacto</a>
                     </motion.li>
                 </ul>
-                <button className=" py-3 px-24 text-lg font-medium bg-night text-white rounded-full">
+                <button className=" py-3 px-12 text-lg font-medium bg-night text-white rounded-full">
                     <a href="/cv/CV_JULIO_ROJA.pdf" download>
                         Descargar CV
                     </a>

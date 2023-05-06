@@ -1,8 +1,9 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import BurgerMenuHeader from "@/components/header/BurgerIconMenu";
 
-const MainMenuHeader = () => {
+const MainMenuHeader = ({ isMenuOpen, setIsMenuOpen }) => {
     return (
         <motion.header
             initial={{ opacity: 0 }}
@@ -51,6 +52,10 @@ const MainMenuHeader = () => {
                     </a>
                 </button>
             </div>
+            <BurgerMenuHeader
+                isMenuOpen={isMenuOpen}
+                setIsMenuOpen={setIsMenuOpen}
+            />
         </motion.header>
     );
 };
