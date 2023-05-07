@@ -7,13 +7,13 @@ const MainHeader = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <>
+        <header className="">
+            {isMenuOpen && <BurgerMenuHeader />}
             <MainMenuHeader
                 isMenuOpen={isMenuOpen}
                 setIsMenuOpen={setIsMenuOpen}
             />
-            {isMenuOpen && <BurgerMenuHeader />}
-        </>
+        </header>
     );
 };
 

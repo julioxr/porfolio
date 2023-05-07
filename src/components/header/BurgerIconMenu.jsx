@@ -9,7 +9,7 @@ const BurgerIconMenu = ({ isMenuOpen, setIsMenuOpen }) => {
 
     return (
         <div
-            className="absolute right-5 top-5 text-3xl cursor-pointer md:hidden"
+            className="text-3xl cursor-pointer md:hidden z-50"
             onClick={handleBurgerButton}
         >
             <GrMenu />

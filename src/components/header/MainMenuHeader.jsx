@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import BurgerMenuHeader from "@/components/header/BurgerIconMenu";
+import { Spin as Hamburger } from "hamburger-react";
 
 const MainMenuHeader = ({ isMenuOpen, setIsMenuOpen }) => {
     return (
@@ -51,11 +51,15 @@ const MainMenuHeader = ({ isMenuOpen, setIsMenuOpen }) => {
                         Descargar CV
                     </a>
                 </button>
+                <div className="z-50 text-night">
+                    <Hamburger
+                        size={26}
+                        toggled={isMenuOpen}
+                        toggle={setIsMenuOpen}
+                        rounded
+                    />
+                </div>
             </div>
-            <BurgerMenuHeader
-                isMenuOpen={isMenuOpen}
-                setIsMenuOpen={setIsMenuOpen}
-            />
         </motion.header>
     );
 };
