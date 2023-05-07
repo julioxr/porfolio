@@ -14,7 +14,7 @@ const BurgerMenuHeader = ({ handleMenu }) => {
                     <motion.li
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 1 }}
-                        className="hover:text-celadon border-celadon decoration-celadon"
+                        className="hover:text-white border-celadon decoration-celadon"
                     >
                         <a href="#inicio" onClick={handleMenu}>
                             Inicio
@@ -23,7 +23,7 @@ const BurgerMenuHeader = ({ handleMenu }) => {
                     <motion.li
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 1 }}
-                        className="hover:text-celadon border-celadon decoration-celadon"
+                        className="hover:text-white border-celadon decoration-celadon"
                     >
                         <a href="#proyectos" onClick={handleMenu}>
                             Proyectos
@@ -32,7 +32,7 @@ const BurgerMenuHeader = ({ handleMenu }) => {
                     <motion.li
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 1 }}
-                        className="hover:text-celadon border-celadon decoration-celadon"
+                        className="hover:text-white border-celadon decoration-celadon"
                     >
                         <a href="#sobre-mi" onClick={handleMenu}>
                             Sobre mi
@@ -41,22 +41,21 @@ const BurgerMenuHeader = ({ handleMenu }) => {
                     <motion.li
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 1 }}
-                        className="hover:text-celadon border-celadon decoration-celadon"
+                        className="hover:text-white border-celadon decoration-celadon"
                     >
                         <a href="#contacto" onClick={handleMenu}>
                             Contacto
                         </a>
                     </motion.li>
                 </ul>
-                <button className=" py-3 px-12 text-lg font-medium bg-night text-white rounded-full">
-                    <a
-                        href="/cv/CV_JULIO_ROJA.pdf"
+                <a href="/cv/CV_JULIO_ROJA.pdf" download>
+                    <button
+                        className=" py-3 px-12 text-lg font-medium bg-night text-white rounded-full"
                         onClick={handleMenu}
-                        download
                     >
                         Descargar CV
-                    </a>
-                </button>
+                    </button>
+                </a>
             </div>
         </section>
     );

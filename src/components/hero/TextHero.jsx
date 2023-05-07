@@ -36,24 +36,26 @@ const TextHero = () => {
                 , un apasionado desarrollador web que vive en Argentina, Buenos
                 Aires.
             </motion.p>
-            <motion.button
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 1 }}
-                transition={{ duration: 0.3, delay: 0.4 }}
-                animate={shouldShake ? "shake" : undefined}
-                variants={{
-                    shake: {
-                        rotate: [0, 3, -3, 2, -2, 1, -1, 0],
-                        transition: {
-                            duration: 0.5,
+            <a href="#contacto">
+                <motion.button
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 1 }}
+                    transition={{ duration: 0.3, delay: 0.4 }}
+                    animate={shouldShake ? "shake" : undefined}
+                    variants={{
+                        shake: {
+                            rotate: [0, 3, -3, 2, -2, 1, -1, 0],
+                            transition: {
+                                duration: 0.5,
+                            },
+                            opacity: 1,
                         },
-                        opacity: 1,
-                    },
-                }}
-                className="md:py-1 md:px-3 w-60 self-center md:self-start sm:w-52 bg-celadon text-white font-semibold rounded-full my-6 text-lg h-14"
-            >
-                <a href="#contacto">Contactame</a>
-            </motion.button>
+                    }}
+                    className="md:py-1 md:px-3 w-60 self-center md:self-start sm:w-52 bg-celadon text-white font-semibold rounded-full my-6 text-lg h-14"
+                >
+                    Contactame
+                </motion.button>
+            </a>
         </div>
     );
 };
