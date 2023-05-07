@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 
-const BurgerMenuHeader = () => {
+const BurgerMenuHeader = ({ handleMenu }) => {
     return (
         <section
             initial={{ opacity: 0 }}
@@ -16,32 +16,44 @@ const BurgerMenuHeader = () => {
                         whileTap={{ scale: 1 }}
                         className="hover:text-celadon border-celadon decoration-celadon"
                     >
-                        <a href="#inicio">Inicio</a>
+                        <a href="#inicio" onClick={handleMenu}>
+                            Inicio
+                        </a>
                     </motion.li>
                     <motion.li
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 1 }}
                         className="hover:text-celadon border-celadon decoration-celadon"
                     >
-                        <a href="#proyectos">Proyectos</a>
+                        <a href="#proyectos" onClick={handleMenu}>
+                            Proyectos
+                        </a>
                     </motion.li>
                     <motion.li
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 1 }}
                         className="hover:text-celadon border-celadon decoration-celadon"
                     >
-                        <a href="#sobre-mi">Sobre mi</a>
+                        <a href="#sobre-mi" onClick={handleMenu}>
+                            Sobre mi
+                        </a>
                     </motion.li>
                     <motion.li
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 1 }}
                         className="hover:text-celadon border-celadon decoration-celadon"
                     >
-                        <a href="#contacto">Contacto</a>
+                        <a href="#contacto" onClick={handleMenu}>
+                            Contacto
+                        </a>
                     </motion.li>
                 </ul>
                 <button className=" py-3 px-12 text-lg font-medium bg-night text-white rounded-full">
-                    <a href="/cv/CV_JULIO_ROJA.pdf" download>
+                    <a
+                        href="/cv/CV_JULIO_ROJA.pdf"
+                        onClick={handleMenu}
+                        download
+                    >
                         Descargar CV
                     </a>
                 </button>

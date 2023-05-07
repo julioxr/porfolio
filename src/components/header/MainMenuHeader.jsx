@@ -51,7 +51,7 @@ const MainMenuHeader = ({ isMenuOpen, setIsMenuOpen }) => {
                         Descargar CV
                     </a>
                 </button>
-                <div className="z-50 text-night">
+                <div className="z-50 text-night md:hidden">
                     <Hamburger
                         size={26}
                         toggled={isMenuOpen}

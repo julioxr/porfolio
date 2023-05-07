@@ -5,10 +5,13 @@ import BurgerMenuHeader from "@/components/header/BurgerMenuHeader";
 
 const MainHeader = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const handleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
 
     return (
         <header className="">
-            {isMenuOpen && <BurgerMenuHeader />}
+            {isMenuOpen && <BurgerMenuHeader handleMenu={handleMenu} />}
             <MainMenuHeader
                 isMenuOpen={isMenuOpen}
                 setIsMenuOpen={setIsMenuOpen}
