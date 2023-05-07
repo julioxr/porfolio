@@ -46,11 +46,11 @@ const MainMenuHeader = ({ isMenuOpen, setIsMenuOpen }) => {
                         </motion.li>
                     </ul>
                 </div>
-                <button className="hidden md:block py-1 px-3 bg-celadon w-32 text-night rounded-full">
-                    <a href="/cv/CV_JULIO_ROJA.pdf" download>
+                <a href="/cv/CV_JULIO_ROJA.pdf" download>
+                    <button className="hidden md:block py-1 px-3 bg-celadon w-32 text-night rounded-full">
                         Descargar CV
-                    </a>
-                </button>
+                    </button>
+                </a>
                 <div className="z-50 text-night md:hidden">
                     <Hamburger
                         size={26}
