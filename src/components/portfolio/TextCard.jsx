@@ -5,7 +5,7 @@ const TextCard = ({ title, description }) => {
 
     return (
         <>
-            <h4 className="font-bold text-xl sm:text-base">{title}</h4>
+            <h4 className="font-bold text-xl pt-4">{title}</h4>
             <p className="text-sm">{shortDescription}</p>
         </>
     );
