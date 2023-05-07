@@ -9,7 +9,7 @@ const cards = [
         title: "Store",
         img: "/store.jpeg",
         description:
-            "Ecommerce de una tienda de articulos de technologia, con carrito de compra",
+            "Ecommerce especializado en productos de tecnología, donde podrás encontrar una amplia selección de gadgets y dispositivos electrónicos. Nuestro carrito de compra te permite agregar los productos que te interesan y finalizar tu compra de manera rápida y segura. ¡Haz tu pedido hoy y obtén los últimos avances en tecnología!",
         github: "https://github.com/julioxr/tienda",
         web: "https://tienda-julioxr.vercel.app/",
     },
@@ -18,7 +18,7 @@ const cards = [
         title: "Portfolio",
         img: "/portfolio.jpg",
         description:
-            "Ecommerce de una tienda de articulos de technologia, con carrito de compra",
+            "Mi portfolio es una ventana a mi trabajo como desarrollador, en la que podrás explorar algunos de mis proyectos más recientes y destacados. Desde aplicaciones web hasta soluciones de software personalizadas, cada proyecto es una oportunidad para mostrar mis habilidades en el desarrollo de software y la implementación de tecnologías innovadoras. Espero que mi portfolio te brinde una visión más clara de mis habilidades y conocimientos, y te invite a explorar las muchas posibilidades que puedo ofrecer como desarrollador.",
         github: "https://github.com/julioxr/porfolio",
         web: "https://julioroja.dev.ar/",
     },
@@ -27,7 +27,7 @@ const cards = [
         title: "Inmobiliaria",
         img: "/inmobiliaria.png",
         description:
-            "Ecommerce de una tienda de articulos de technologia, con carrito de compra",
+            "Landing page de inmobiliaria Cafran, donde te ofrecemos una selección exclusiva de propiedades inmobiliarias. Con nuestra amplia experiencia en el mercado inmobiliario, te garantizamos la calidad y la autenticidad de cada una de las propiedades que te presentamos en nuestro sitio web.",
         github: "https://github.com/julioxr/inmobiliaria-cafran",
         web: "https://cafran.netlify.app/",
     },
@@ -36,7 +36,7 @@ const cards = [
         title: "Supermarket",
         img: "/supermarket.jpg",
         description:
-            "Ecommerce de una tienda de articulos de technologia, con carrito de compra",
+            "Nuestro check list de supermercado te permitirá planificar tus compras de manera efectiva y asegurarte de que no te olvides de nada importante en tu próxima visita al supermercado. Hemos diseñado nuestro check list con una variedad de categorías de productos, desde alimentos frescos hasta productos de limpieza, para que puedas organizar tus compras y maximizar tu tiempo en el supermercado. Además, hemos incluido espacio para notas y recordatorios, lo que te permite agregar elementos personalizados a la lista y adaptarla a tus necesidades individuales.",
         github: "https://github.com/julioxr/supermarket-crud-tailwind",
         web: "https://supermarket-checklist.netlify.app/",
     },

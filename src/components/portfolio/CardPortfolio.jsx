@@ -4,8 +4,8 @@ import InfoCard from "./InfoCard";
 
 const CardPortfolio = ({ img, title, description, web, github }) => {
     return (
-        <div className="bg-white h-auto rounded-lg shadow-xl max-w-3xl">
-            <div className="flex sm:flex-row flex-col justify-center items-center h-full">
+        <div className="bg-white h-auto rounded-lg shadow-xl w-96 md:w-[27rem] lg:w-[40rem] xl:w-[48rem]">
+            <div className="flex flex-col lg:flex-row justify-center items-center h-full">
                 <ImageCard img={img} />
                 <InfoCard
                     title={title}

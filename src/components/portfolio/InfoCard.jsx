@@ -1,5 +1,4 @@
 import React from "react";
-
 import TextCard from "./TextCard";
 import TechnologyCard from "./TechnologyCard";
 import ButtonsCard from "./ButtonsCard";
