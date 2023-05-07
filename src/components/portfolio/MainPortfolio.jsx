@@ -12,7 +12,7 @@ const cards = [
             "Ecommerce especializado en productos de tecnología, donde podrás encontrar una amplia selección de gadgets y dispositivos electrónicos. Nuestro carrito de compra te permite agregar los productos que te interesan y finalizar tu compra de manera rápida y segura. ¡Haz tu pedido hoy y obtén los últimos avances en tecnología!",
         github: "https://github.com/julioxr/tienda",
         web: "https://tienda-julioxr.vercel.app/",
-        tech: ["NextJS", "TailWind", "React", "Formkik"],
+        tech: ["NextJS", "TailWind", "React", "Formik"],
     },
     {
         id: 2,
