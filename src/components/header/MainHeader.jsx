@@ -10,7 +10,7 @@ const MainHeader = () => {
     };
 
     return (
-        <header className="">
+        <header id="inicio">
             {isMenuOpen && <BurgerMenuHeader handleMenu={handleMenu} />}
             <MainMenuHeader
                 isMenuOpen={isMenuOpen}

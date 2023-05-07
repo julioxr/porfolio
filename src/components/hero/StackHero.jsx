@@ -58,7 +58,7 @@ const StackHero = () => {
                         return (
                             <>
                                 <motion.div
-                                    initial={{ x: -20, opacity: 0 }}
+                                    initial={{ x: 20, opacity: 0 }}
                                     animate={{ x: 0, opacity: 1 }}
                                     transition={{
                                         duration: 0.5,
@@ -83,18 +83,14 @@ const StackHero = () => {
                     })}
             </div>
             <h2 className="font-semibold mt-2 pb-1">Back</h2>
-            <motion.div
-                initial={{ x: -20, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                className="flex gap-3 sm:gap-4 justify-between font-light sm:mt-2"
-            >
+            <motion.div className="flex gap-3 sm:gap-4 justify-between font-light sm:mt-2">
                 {backTechnologies &&
                     backTechnologies.map(({ src, name }, index) => {
                         return (
                             <>
                                 <motion.div
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
+                                    initial={{ x: 20, opacity: 0 }}
+                                    animate={{ x: 0, opacity: 1 }}
                                     transition={{
                                         duration: 0.5,
                                         delay: index * 0.2,
