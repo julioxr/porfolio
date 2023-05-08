@@ -1,7 +1,18 @@
 "use client";
+import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
 const BurgerMenuHeader = ({ handleMenu }) => {
+    const bodyRef = useRef(document.body);
+
+    // Con esto evitamos que el body se pueda hacer scroll cuando el menu esta abierto
+    useEffect(() => {
+        bodyRef.current.classList.add("overflow-hidden");
+        return () => {
+            bodyRef.current.classList.remove("overflow-hidden");
+        };
+    }, []);
+
     return (
         <section
             initial={{ opacity: 0 }}
