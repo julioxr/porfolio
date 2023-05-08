@@ -29,7 +29,7 @@ const FormContacto = () => {
             setError(true);
             setTimeout(() => setShowCongrats(false), 3000);
         } else {
-            // handleSubmit(event);
+            handleSubmit(event);
             clearInputs();
             setShowCongrats(true);
             setError(false);
@@ -39,7 +39,7 @@ const FormContacto = () => {
 
     const handleFormSubmit = async (event) => {
         event.preventDefault();
-        validateEmptyInput();
+        validateEmptyInput(event);
     };
 
     return (
@@ -48,9 +48,6 @@ const FormContacto = () => {
                 onSubmit={handleFormSubmit}
                 className="flex w-full flex-col gap-6 text-night"
             >
-                {/* <label htmlFor="name" className="font-semibold z-30">
-                    Nombre
-                </label> */}
                 <div className="relative">
                     <div className="flex w-10">
                         <BsFillPersonFill className="text-white absolute h-full text-2xl left-2" />
@@ -74,9 +71,6 @@ const FormContacto = () => {
                     errors={state.errors}
                 />
 
-                {/* <label htmlFor="email" className="font-semibold">
-                    Email
-                </label> */}
                 <div className="relative">
                     <div className="flex w-10">
                         <BsFillEnvelopeAtFill className="text-white absolute h-full text-2xl left-2" />
@@ -99,10 +93,6 @@ const FormContacto = () => {
                     field="email"
                     errors={state.errors}
                 />
-
-                {/* <label htmlFor="message" className="font-semibold">
-                    Mensaje
-                </label> */}
 
                 <div className="relative">
                     <div className="flex w-10 h-auto absolute top-2 left-2">
