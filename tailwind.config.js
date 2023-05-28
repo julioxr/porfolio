@@ -20,6 +20,8 @@ module.exports = {
                 celadon: "#80e895",
                 platinum: "#EAE6E5",
                 cinereous: "#8F8073",
+                hgradient:
+                    "bg-gradient-to-r from-hgreen from-15% via-hblue via-50% to-hdarkblue to-100% ",
             },
         },
     },

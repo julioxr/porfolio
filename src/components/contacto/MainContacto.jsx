@@ -19,7 +19,13 @@ const MainContacto = () => {
             >
                 CONTACTAME
             </motion.h2>
-            <div className="flex container mx-auto w-full justify-between items-center max-w-lg md:max-w-5xl gap-8 ">
+            <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1 }}
+                viewport={{ once: true }}
+                className="flex container mx-auto w-full justify-between items-center max-w-lg md:max-w-5xl gap-8 "
+            >
                 <div className="w-full md:w-1/2 z-30">
                     <FormContacto />
                 </div>
@@ -31,7 +37,7 @@ const MainContacto = () => {
                         height={800}
                     />
                 </div>
-            </div>
+            </motion.div>
         </section>
     );
 };

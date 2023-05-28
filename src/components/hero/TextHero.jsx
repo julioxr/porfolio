@@ -15,11 +15,14 @@ const TextHero = () => {
 
     return (
         <div className="flex flex-col justify-center sm:mb-0 sm:px-0 text-center md:text-start max-w-none">
+            <p className="text-4xl md:text-5xl font-bold mb-2">
+                Soy <span className="font-bold text-celadon ">Julio Roja</span>
+            </p>
             <motion.h1
                 initial={{ y: -20, opacity: 0 }}
                 transition={{ duration: 0.3 }}
                 animate={{ y: 0.4, opacity: 1 }}
-                className="text-4xl md:text-5xl font-bold mb-2"
+                className="text-3xl md:text-4xl font-semibold mb-2"
             >
                 Frontend developer
             </motion.h1>
@@ -29,12 +32,8 @@ const TextHero = () => {
                 animate={{ y: 0.4, opacity: 1 }}
                 className="md:text-lg max-w-[350px] md:max-w-sm"
             >
-                Soy{" "}
-                <span className="font-bold decoration-[2px] underline-offset-2 text-celadon underline">
-                    Julio Roja
-                </span>
-                , un apasionado desarrollador web que vive en Argentina, Buenos
-                Aires.
+                Apasionado del desarrollo. Ansioso por unirme a tu equipo y
+                contribuir al éxito de los proyectos.
             </motion.p>
             <a href="#contacto">
                 <motion.button

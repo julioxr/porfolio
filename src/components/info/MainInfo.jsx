@@ -13,7 +13,13 @@ const MainInfo = () => {
         >
             <div className="container mx-auto flex justify-center pb-10 sm:pt-20 sm:pb-32 w-full">
                 <div className="max-w-5xl flex flex-col md:flex-row w-full gap-12 items-center ">
-                    <div className="z-20">
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true }}
+                        className="z-20"
+                    >
                         <Image
                             src="/aboutMe.svg"
                             width={800}
@@ -21,7 +27,7 @@ const MainInfo = () => {
                             alt="Imagen de persona trabajando en la pc"
                             className="max-w-[350px] sm:max-w-[25rem] md:max-w-xl"
                         />
-                    </div>
+                    </motion.div>
                     <div className="flex flex-col gap-3 md:w-[40rem]">
                         <motion.h4
                             initial={{ x: -100, opacity: 0 }}
@@ -45,8 +51,7 @@ const MainInfo = () => {
                             >
                                 ¡Hola! Soy un desarrollador frontend con amplias
                                 habilidades en tecnologías como Next.js, React,
-                                JavaScript, Tailwind y Firebase, las cuales
-                                utilizo a diario en mi trabajo. También tengo
+                                JavaScript, Tailwind y Firebase. También tengo
                                 experiencia en tecnologías de backend como
                                 NodeJS, Express, MongoDB y MySQL.
                             </motion.p>

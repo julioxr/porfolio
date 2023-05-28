@@ -18,10 +18,10 @@ const frontTechnologies = [
         name: "Tailwind",
         src: "/stack/tailwind.svg",
     },
-    {
-        name: "Firebase",
-        src: "/stack/firebase.svg",
-    },
+    // {
+    //     name: "Firebase",
+    //     src: "/stack/firebase.svg",
+    // },
 ];
 
 const backTechnologies = [
