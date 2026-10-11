@@ -54,7 +54,7 @@ export default async function ServicePage({ params }: Props) {
           / <span>{service.name}</span>
         </nav>
 
-        <h1 className="mt-6 font-serif text-4xl leading-tight font-semibold tracking-tight sm:text-5xl">
+        <h1 className="mt-6 font-display text-4xl leading-tight font-semibold tracking-tight sm:text-5xl">
           {service.title}
         </h1>
         <p className="mt-6 text-lg leading-relaxed text-muted">{service.intro}</p>
@@ -65,7 +65,7 @@ export default async function ServicePage({ params }: Props) {
         </div>
 
         <section className="mt-16">
-          <h2 className="font-serif text-2xl font-semibold">¿Para quién es?</h2>
+          <h2 className="font-display text-2xl font-semibold">¿Para quién es?</h2>
           <ul className="mt-4 list-disc space-y-2 pl-6 text-lg">
             {service.forWho.map((i) => (
               <li key={i}>{i}</li>
@@ -74,7 +74,7 @@ export default async function ServicePage({ params }: Props) {
         </section>
 
         <section className="mt-12">
-          <h2 className="font-serif text-2xl font-semibold">Ejemplos de lo que puedo hacer</h2>
+          <h2 className="font-display text-2xl font-semibold">Ejemplos de lo que puedo hacer</h2>
           <ul className="mt-4 list-disc space-y-2 pl-6 text-lg">
             {service.examples.map((i) => (
               <li key={i}>{i}</li>
@@ -86,11 +86,11 @@ export default async function ServicePage({ params }: Props) {
         </section>
 
         <section className="mt-12">
-          <h2 className="font-serif text-2xl font-semibold">Cómo trabajamos</h2>
+          <h2 className="font-display text-2xl font-semibold">Cómo trabajamos</h2>
           <ol className="mt-4 space-y-4">
             {service.steps.map((s, i) => (
               <li key={s.title} className="flex gap-4">
-                <span className="font-serif text-3xl font-semibold text-accent">{i + 1}</span>
+                <span className="w-8 shrink-0 font-display text-3xl font-extrabold text-accent">{i + 1}</span>
                 <div>
                   <h3 className="text-lg font-semibold">{s.title}</h3>
                   <p className="text-muted">{s.text}</p>
@@ -101,14 +101,14 @@ export default async function ServicePage({ params }: Props) {
         </section>
 
         <section className="mt-12">
-          <h2 className="font-serif text-2xl font-semibold">Preguntas frecuentes</h2>
+          <h2 className="font-display text-2xl font-semibold">Preguntas frecuentes</h2>
           <div className="mt-4">
             <Faq items={service.faqs} />
           </div>
         </section>
 
-        <section className="mt-16 rounded-3xl bg-brand p-8 text-center text-bg">
-          <h2 className="font-serif text-2xl font-semibold">¿Hablamos?</h2>
+        <section className="mt-16 rounded-xl bg-band p-8 text-band-ink">
+          <h2 className="font-display text-2xl font-semibold">¿Hablamos?</h2>
           <p className="mt-2 opacity-90">Contame tu caso y te digo si puedo ayudarte.</p>
           <div className="mt-6">
             <CtaButton href={whatsappLink(service.whatsappMessage)} location={`service-${service.slug}-bottom`}>
@@ -124,7 +124,7 @@ export default async function ServicePage({ params }: Props) {
               <li key={s.slug}>
                 <Link
                   href={`/servicios/${s.slug}`}
-                  className="inline-block rounded-full border border-line px-4 py-2 text-sm font-medium hover:border-accent"
+                  className="inline-block rounded-md border border-line px-4 py-2 text-sm font-medium hover:border-accent"
                 >
                   {s.name}
                 </Link>

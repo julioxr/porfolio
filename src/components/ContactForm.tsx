@@ -6,7 +6,7 @@ import { site } from "@/data/site";
 type Status = "idle" | "sending" | "success" | "error";
 
 const field =
-  "mt-1 w-full rounded-xl border border-line bg-surface px-4 py-3 text-base text-ink placeholder:text-muted/70";
+  "mt-1 w-full rounded-md border-2 border-line bg-surface px-4 py-3 text-base text-ink placeholder:text-muted/70";
 
 export function ContactForm() {
   const [status, setStatus] = useState<Status>("idle");
@@ -35,7 +35,7 @@ export function ContactForm() {
   if (status === "success") {
     return (
       <div role="status" className="rounded-2xl border border-line bg-surface p-6">
-        <p className="font-serif text-xl font-semibold">¡Gracias por escribirme!</p>
+        <p className="font-display text-xl font-semibold">¡Gracias por escribirme!</p>
         <p className="mt-2 text-muted">Recibí tu mensaje y te respondo a la brevedad.</p>
       </div>
     );
@@ -69,7 +69,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={status === "sending"}
-        className="min-h-12 rounded-full bg-accent px-6 py-3 font-semibold text-accent-ink transition hover:opacity-90 disabled:opacity-60"
+        className="min-h-12 rounded-md border-2 border-ink bg-cta px-6 py-3 font-display font-semibold text-cta-ink transition hover:opacity-90 disabled:opacity-60"
       >
         {status === "sending" ? "Enviando…" : "Enviar mensaje"}
       </button>

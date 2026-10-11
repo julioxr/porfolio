@@ -1,26 +1,30 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #fbf7f0;
+  --bg: #f2f5fa;
   --surface: #ffffff;
-  --ink: #1b2a24;
-  --muted: #55625b;
-  --brand: #2f5d50;
-  --accent: #b84a22;
-  --accent-ink: #ffffff;
-  --line: #e6dfd2;
+  --ink: #121b3a;
+  --muted: #4a5573;
+  --accent: #2338c9;
+  --line: #cfd8e8;
+  --grid: rgb(18 27 58 / 0.06);
+  --cta: #ffe45c;
+  --cta-ink: #121b3a;
+  --band: #121b3a;
+  --band-ink: #f2f5fa;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #111915;
-    --surface: #18231e;
-    --ink: #f1ece2;
-    --muted: #a9b4ad;
-    --brand: #7fb5a2;
-    --accent: #e8895f;
-    --accent-ink: #1a0f0a;
-    --line: #2a3a33;
+    --bg: #0d1428;
+    --surface: #141d38;
+    --ink: #e9eefa;
+    --muted: #a4afcb;
+    --accent: #9db0ff;
+    --line: #263356;
+    --grid: rgb(233 238 250 / 0.05);
+    --band: #1b2750;
+    --band-ink: #f2f5fa;
   }
 }
 
@@ -29,12 +33,13 @@
   --color-surface: var(--surface);
   --color-ink: var(--ink);
   --color-muted: var(--muted);
-  --color-brand: var(--brand);
   --color-accent: var(--accent);
-  --color-accent-ink: var(--accent-ink);
   --color-line: var(--line);
-  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-fraunces), ui-serif, Georgia, serif;
+  --color-cta: var(--cta);
+  --color-cta-ink: var(--cta-ink);
+  --color-band: var(--band);
+  --color-band-ink: var(--band-ink);
+  --font-display: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
 }
 
 html {
@@ -42,10 +47,34 @@ html {
 }
 
 body {
-  background: var(--bg);
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 32px 32px;
   color: var(--ink);
-  font-family: var(--font-sans);
+  font-family: var(--font-source), ui-serif, Georgia, serif;
+  font-size: 1.125rem;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+h1 {
+  font-weight: 800;
+  font-variation-settings: "wdth" 88;
+}
+
+h2,
+h3 {
+  font-weight: 700;
 }
 
 :focus-visible {

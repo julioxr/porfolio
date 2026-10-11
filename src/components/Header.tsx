@@ -14,11 +14,12 @@ export function Header() {
   return (
     <header className="border-b border-line">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
-        <Link href="/" className="font-serif text-xl font-semibold tracking-tight">
+        <Link href="/" className="flex items-center gap-2 font-display text-xl font-extrabold tracking-tight">
+          <span aria-hidden className="size-3.5 border-2 border-ink bg-cta" />
           {site.name}
         </Link>
 
-        <nav aria-label="Principal" className="hidden items-center gap-6 text-sm font-medium lg:flex">
+        <nav aria-label="Principal" className="hidden items-center gap-6 font-display text-sm font-semibold lg:flex">
           {links.map((l) => (
             <Link key={l.href} href={l.href} className="text-muted hover:text-ink">
               {l.label}
@@ -36,19 +37,19 @@ export function Header() {
           </CtaButton>
 
           <details className="relative lg:hidden">
-            <summary className="flex min-h-10 cursor-pointer list-none items-center rounded-full border border-line px-4 text-sm font-semibold">
+            <summary className="flex min-h-10 cursor-pointer list-none items-center rounded-md border border-line px-4 text-sm font-semibold">
               Menú
             </summary>
             <nav
               aria-label="Menú móvil"
-              className="absolute right-0 z-50 mt-2 flex w-64 flex-col gap-1 rounded-2xl border border-line bg-surface p-3 shadow-lg"
+              className="absolute right-0 z-50 mt-2 flex w-64 flex-col gap-1 rounded-md border-2 border-ink bg-surface p-3"
             >
               {links.map((l) => (
-                <Link key={l.href} href={l.href} className="rounded-lg px-3 py-3 font-medium hover:bg-ink/5">
+                <Link key={l.href} href={l.href} className="rounded-md px-3 py-3 font-display font-semibold hover:bg-ink/5">
                   {l.label}
                 </Link>
               ))}
-              <Link href="/contacto" className="rounded-lg px-3 py-3 font-semibold text-accent hover:bg-ink/5">
+              <Link href="/contacto" className="rounded-md px-3 py-3 font-display font-bold text-accent hover:bg-ink/5">
                 Contacto
               </Link>
             </nav>

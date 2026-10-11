@@ -22,7 +22,7 @@ export default function Contacto() {
         ])}
       />
       <div className="mx-auto max-w-3xl px-4 pt-14 sm:px-6">
-        <h1 className="font-serif text-4xl leading-tight font-semibold tracking-tight sm:text-5xl">
+        <h1 className="font-display text-4xl leading-tight font-semibold tracking-tight sm:text-5xl">
           Contame qué querés mejorar
         </h1>
         <p className="mt-6 text-lg leading-relaxed text-muted">

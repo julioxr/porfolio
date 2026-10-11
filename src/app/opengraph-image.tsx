@@ -16,15 +16,15 @@ export default function OpengraphImage() {
           flexDirection: "column",
           justifyContent: "center",
           padding: 80,
-          background: "#fbf7f0",
-          color: "#1b2a24",
+          background: "#f2f5fa",
+          color: "#121b3a",
         }}
       >
-        <div style={{ fontSize: 30, color: "#2f5d50", fontWeight: 700 }}>{site.descriptor}</div>
+        <div style={{ fontSize: 30, color: "#2338c9", fontWeight: 700 }}>{site.descriptor}</div>
         <div style={{ fontSize: 76, fontWeight: 700, marginTop: 24, lineHeight: 1.1 }}>
           Ahorrá horas de trabajo repetitivo con IA
         </div>
-        <div style={{ fontSize: 36, marginTop: 40, color: "#b84a22", fontWeight: 700 }}>
+        <div style={{ fontSize: 36, marginTop: 40, color: "#121b3a", background: "#ffe45c", padding: "8px 16px", alignSelf: "flex-start", fontWeight: 700 }}>
           {`${site.name} · julioroja.dev.ar`}
         </div>
       </div>

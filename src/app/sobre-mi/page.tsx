@@ -27,7 +27,7 @@ export default function SobreMi() {
         ]}
       />
       <article className="mx-auto max-w-3xl px-4 pt-14 sm:px-6">
-        <h1 className="font-serif text-4xl leading-tight font-semibold tracking-tight sm:text-5xl">
+        <h1 className="font-display text-4xl leading-tight font-semibold tracking-tight sm:text-5xl">
           Sobre mí
         </h1>
         <div className="mt-8 space-y-5 text-lg leading-relaxed">
@@ -41,14 +41,14 @@ export default function SobreMi() {
             profesionales no necesitaban teoría: necesitaban que alguien los ayude a aplicarla en
             tareas concretas, y que las cosas funcionen de verdad.
           </p>
-          <h2 className="pt-4 font-serif text-2xl font-semibold">Cómo trabajo</h2>
+          <h2 className="pt-4 font-display text-2xl font-semibold">Cómo trabajo</h2>
           <ul className="list-disc space-y-2 pl-6">
             <li>Hablo en simple. No hace falta que sepas de tecnología.</li>
             <li>Pruebo todo antes de entregarlo, porque vengo de QA.</li>
             <li>Si la IA no es lo que necesitás, te lo digo.</li>
             <li>Arranco por lo que más tiempo te ahorra, no por lo más vistoso.</li>
           </ul>
-          <h2 className="pt-4 font-serif text-2xl font-semibold">Mis proyectos</h2>
+          <h2 className="pt-4 font-display text-2xl font-semibold">Mis proyectos</h2>
           <p>
             Además de trabajar con clientes, construyo mis propios proyectos de software. Podés ver
             mi código en{" "}
