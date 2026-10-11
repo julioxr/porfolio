@@ -1,0 +1,13 @@
+# Julio Roja — Consultor en IA y automatización
+
+> Ayudo a pymes, emprendedores y profesionales independientes de Argentina y Latinoamérica a integrar inteligencia artificial en sus tareas: capacitación, automatización de procesos, asistentes y chatbots a medida, y consultoría.
+
+## Servicios
+- [Capacitación en IA](https://julioroja.dev.ar/servicios/capacitacion)
+- [Automatización de procesos](https://julioroja.dev.ar/servicios/automatizacion)
+- [Asistentes y chatbots a medida](https://julioroja.dev.ar/servicios/asistentes-chatbots)
+- [Consultoría y diagnóstico](https://julioroja.dev.ar/servicios/consultoria)
+
+## Más
+- [Sobre mí](https://julioroja.dev.ar/sobre-mi)
+- [Contacto](https://julioroja.dev.ar/contacto)

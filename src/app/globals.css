@@ -1,16 +1,65 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-* {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    scrollbar-width: thin;
+:root {
+  --bg: #fbf7f0;
+  --surface: #ffffff;
+  --ink: #1b2a24;
+  --muted: #55625b;
+  --brand: #2f5d50;
+  --accent: #b84a22;
+  --accent-ink: #ffffff;
+  --line: #e6dfd2;
 }
-input:-webkit-autofill,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:active {
-    transition: background-color 5000s ease-in-out 0s;
-    -webkit-text-fill-color: white !important;
-    color: white !important;
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111915;
+    --surface: #18231e;
+    --ink: #f1ece2;
+    --muted: #a9b4ad;
+    --brand: #7fb5a2;
+    --accent: #e8895f;
+    --accent-ink: #1a0f0a;
+    --line: #2a3a33;
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-brand: var(--brand);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-line: var(--line);
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), ui-serif, Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
