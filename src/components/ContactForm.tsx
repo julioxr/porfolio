@@ -1,15 +1,24 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 import { site } from "@/data/site";
 
 type Status = "idle" | "sending" | "success" | "error";
 
+const noopSubscribe = () => () => {};
+
 const field =
-  "mt-1 w-full rounded-md border-2 border-line bg-surface px-4 py-3 text-base text-ink placeholder:text-muted/70";
+  "mt-2 w-full rounded-[5px] border border-line bg-bg px-3.5 py-2.5 text-base text-ink transition-colors placeholder:text-muted hover:border-ink/40 focus:border-accent";
 
 export function ContactForm() {
   const [status, setStatus] = useState<Status>("idle");
+  // Los botones de WhatsApp caen acá con ?mensaje= cuando no hay número configurado.
+  // Ese texto viaja aparte, como contexto, para que la persona igual escriba su consulta.
+  const context = useSyncExternalStore(
+    noopSubscribe,
+    () => new URLSearchParams(window.location.search).get("mensaje") ?? "",
+    () => "",
+  );
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -34,8 +43,8 @@ export function ContactForm() {
 
   if (status === "success") {
     return (
-      <div role="status" className="rounded-2xl border border-line bg-surface p-6">
-        <p className="font-display text-xl font-semibold">¡Gracias por escribirme!</p>
+      <div role="status">
+        <p className="text-xl font-semibold tracking-tight">¡Gracias por escribirme!</p>
         <p className="mt-2 text-muted">Recibí tu mensaje y te respondo a la brevedad.</p>
       </div>
     );
@@ -61,6 +70,12 @@ export function ContactForm() {
         </label>
         <textarea id="mensaje" name="mensaje" required rows={5} className={field} />
       </div>
+      <input type="hidden" name="contexto" value={context} />
+      {context ? (
+        <p className="rounded-[5px] bg-subtle px-4 py-3 text-sm text-muted">
+          <span className="font-medium text-ink">Va junto con tu consulta:</span> {context}
+        </p>
+      ) : null}
       <div className="hidden" aria-hidden>
         <label htmlFor="website">No completar</label>
         <input id="website" name="website" type="text" tabIndex={-1} autoComplete="off" />
@@ -69,13 +84,13 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={status === "sending"}
-        className="min-h-12 rounded-md border-2 border-ink bg-cta px-6 py-3 font-display font-semibold text-cta-ink transition hover:opacity-90 disabled:opacity-60"
+        className="inline-flex min-h-12 w-full items-center justify-center rounded-[5px] bg-accent px-5 text-[0.9375rem] font-medium text-accent-ink transition-colors duration-200 hover:bg-accent-hover disabled:cursor-wait disabled:opacity-60 sm:w-auto"
       >
         {status === "sending" ? "Enviando…" : "Enviar mensaje"}
       </button>
 
       {status === "error" && (
-        <p role="alert" className="text-sm font-medium text-accent">
+        <p role="alert" className="text-sm font-medium text-danger">
           No pude enviar el mensaje. Probá de nuevo o escribime a {site.email}.
         </p>
       )}

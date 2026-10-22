@@ -14,18 +14,38 @@ export default function OpengraphImage() {
           height: "100%",
           display: "flex",
           flexDirection: "column",
-          justifyContent: "center",
+          justifyContent: "space-between",
           padding: 80,
-          background: "#f2f5fa",
-          color: "#121b3a",
+          background: "#ecebe5",
+          color: "#1c1917",
         }}
       >
-        <div style={{ fontSize: 30, color: "#2338c9", fontWeight: 700 }}>{site.descriptor}</div>
-        <div style={{ fontSize: 76, fontWeight: 700, marginTop: 24, lineHeight: 1.1 }}>
-          Ahorrá horas de trabajo repetitivo con IA
+        <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
+          <div
+            style={{
+              width: 64,
+              height: 64,
+              borderRadius: 8,
+              background: "#1c1917",
+              color: "#f4f3ee",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: 26,
+              fontWeight: 600,
+            }}
+          >
+            JR
+          </div>
+          <div style={{ fontSize: 30, fontWeight: 600 }}>{site.name}</div>
         </div>
-        <div style={{ fontSize: 36, marginTop: 40, color: "#121b3a", background: "#ffe45c", padding: "8px 16px", alignSelf: "flex-start", fontWeight: 700 }}>
-          {`${site.name} · julioroja.dev.ar`}
+        <div style={{ display: "flex", flexDirection: "column", fontSize: 72, fontWeight: 600, lineHeight: 1.06, letterSpacing: -2, maxWidth: 1000 }}>
+          <div>Automatizá el trabajo repetitivo de tu pyme.</div>
+          <div style={{ color: "#8a837c" }}>Con IA, sin ser técnico.</div>
+        </div>
+        <div style={{ display: "flex", justifyContent: "space-between", fontSize: 28, color: "#645d57" }}>
+          <div>{`${site.descriptor} para pymes`}</div>
+          <div style={{ color: "#1f45d6" }}>julioroja.dev.ar</div>
         </div>
       </div>
     ),

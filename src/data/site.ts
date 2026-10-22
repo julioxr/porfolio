@@ -16,7 +16,8 @@ export const site = {
 } as const;
 
 export function whatsappLink(message: string): string {
-  if (!site.whatsapp) return "/contacto#formulario";
+  // Sin número, el mensaje viaja al formulario de contacto, que lo precarga.
+  if (!site.whatsapp) return `/contacto?mensaje=${encodeURIComponent(message)}#formulario`;
   return `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(message)}`;
 }
 

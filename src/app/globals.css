@@ -1,86 +1,136 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #f2f5fa;
-  --surface: #ffffff;
-  --ink: #121b3a;
-  --muted: #4a5573;
-  --accent: #2338c9;
-  --line: #cfd8e8;
-  --grid: rgb(18 27 58 / 0.06);
-  --cta: #ffe45c;
-  --cta-ink: #121b3a;
-  --band: #121b3a;
-  --band-ink: #f2f5fa;
+  --bg: #ecebe5;
+  --surface: #f4f3ee;
+  --subtle: #e4e2db;
+  --ink: #1c1917;
+  --muted: #645d57;
+  --quiet: #8a837c;
+  --accent: #1f45d6;
+  --accent-hover: #1838b3;
+  --accent-ink: #ffffff;
+  --accent-soft: #dfe4f6;
+  --danger: #b42318;
+  --line: #d6d3cc;
+  --line-strong: #a8a29e;
+  --band: #1c1917;
+  --band-2: #2a2724;
+  --band-ink: #f4f3ee;
+  --band-muted: #a8a29e;
+  --band-quiet: #8f8780;
+  --band-line: #3d3935;
+  --shadow: 0 1px 2px rgb(28 25 23 / 0.05), 0 8px 24px -10px rgb(28 25 23 / 0.14);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #0d1428;
-    --surface: #141d38;
-    --ink: #e9eefa;
-    --muted: #a4afcb;
-    --accent: #9db0ff;
-    --line: #263356;
-    --grid: rgb(233 238 250 / 0.05);
-    --band: #1b2750;
-    --band-ink: #f2f5fa;
+    --bg: #141210;
+    --surface: #1c1a17;
+    --subtle: #23201d;
+    --ink: #f4f3ee;
+    --muted: #b3aca5;
+    --quiet: #857e77;
+    --accent: #7f9dff;
+    --accent-hover: #a3b9ff;
+    --accent-ink: #0d0f17;
+    --accent-soft: #1d2647;
+    --danger: #ff8a7a;
+    --line: #2f2b28;
+    --line-strong: #4a4541;
+    --band: #0c0b0a;
+    --band-2: #1c1a17;
+    --band-ink: #f4f3ee;
+    --band-muted: #a8a29e;
+    --band-quiet: #857e77;
+    --band-line: #2f2b28;
+    --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px -10px rgb(0 0 0 / 0.5);
   }
 }
 
 @theme inline {
   --color-bg: var(--bg);
   --color-surface: var(--surface);
+  --color-subtle: var(--subtle);
   --color-ink: var(--ink);
   --color-muted: var(--muted);
+  --color-quiet: var(--quiet);
   --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --color-danger: var(--danger);
   --color-line: var(--line);
-  --color-cta: var(--cta);
-  --color-cta-ink: var(--cta-ink);
+  --color-line-strong: var(--line-strong);
   --color-band: var(--band);
+  --color-band-2: var(--band-2);
+  --color-band-quiet: var(--band-quiet);
+  --color-band-line: var(--band-line);
   --color-band-ink: var(--band-ink);
-  --font-display: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
+  --color-band-muted: var(--band-muted);
+  --shadow-soft: var(--shadow);
+  --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 }
 
 html {
   scroll-behavior: smooth;
+  scrollbar-color: var(--line-strong) var(--bg);
 }
 
 body {
   background-color: var(--bg);
-  background-image:
-    linear-gradient(var(--grid) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
-  background-size: 32px 32px;
   color: var(--ink);
-  font-family: var(--font-source), ui-serif, Georgia, serif;
-  font-size: 1.125rem;
+  font-family: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+  font-size: 1.0625rem;
   line-height: 1.65;
+  font-feature-settings: "ss01";
   -webkit-font-smoothing: antialiased;
+  caret-color: var(--accent);
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-ink);
 }
 
 h1,
 h2,
 h3 {
-  font-family: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
-  letter-spacing: -0.02em;
-  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.12;
+  text-wrap: balance;
 }
 
 h1 {
-  font-weight: 800;
-  font-variation-settings: "wdth" 88;
+  letter-spacing: -0.035em;
+  line-height: 1.04;
 }
 
-h2,
-h3 {
-  font-weight: 700;
+p {
+  text-wrap: pretty;
+}
+
+a {
+  text-underline-offset: 0.2em;
 }
 
 :focus-visible {
-  outline: 3px solid var(--accent);
+  outline: 2px solid var(--accent);
   outline-offset: 3px;
   border-radius: 4px;
+}
+
+/* Trama de puntos de las bandas oscuras (como el cierre de zaro.ai). */
+.dots {
+  background-image: radial-gradient(var(--band-line) 1px, transparent 1px);
+  background-size: 14px 14px;
+}
+
+.dots-light {
+  background-image: radial-gradient(var(--line) 1px, transparent 1px);
+  background-size: 14px 14px;
 }
 
 @media (prefers-reduced-motion: reduce) {

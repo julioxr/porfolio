@@ -16,6 +16,10 @@ export const homeFaqs = [
     a: "Depende del trabajo. Después de la primera charla te paso una propuesta con alcance y precio claros, sin sorpresas.",
   },
   {
+    q: "¿Qué pasa con la información de mi negocio?",
+    a: "Antes de empezar acordamos qué datos se usan y cuáles no. Trabajo solo con lo necesario para la tarea y te explico dónde queda cada cosa.",
+  },
+  {
     q: "¿La IA va a reemplazar a mi equipo?",
     a: "El objetivo es lo contrario: sacarles las tareas repetitivas para que dediquen su tiempo a lo que requiere criterio y trato humano.",
   },

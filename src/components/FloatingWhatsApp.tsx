@@ -9,9 +9,10 @@ export function FloatingWhatsApp() {
       <CtaButton
         href={whatsappLink("Hola Julio, vi tu sitio y quiero consultarte algo.")}
         location="floating"
-        className="shadow-lg"
+        icon="chat"
+        className="rounded-full! shadow-soft"
       >
-        Escribime por WhatsApp
+        WhatsApp
       </CtaButton>
     </div>
   );

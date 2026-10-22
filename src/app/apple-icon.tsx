@@ -13,10 +13,10 @@ export default function AppleIcon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          background: "#121b3a",
-          color: "#ffe45c",
+          background: "#1c1917",
+          color: "#f4f3ee",
           fontSize: 96,
-          fontWeight: 700,
+          fontWeight: 600,
         }}
       >
         JR
