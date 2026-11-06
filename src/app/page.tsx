@@ -33,17 +33,15 @@ const steps = [
 ];
 
 const checks = [
-  "Con datos normales",
-  "Con datos vacíos o mal cargados",
-  "Cuando falla la conexión",
-  "Con vos usándolo, no solo conmigo",
+  "Que resuelva bien la tarea",
+  "Datos incompletos o mal cargados",
+  "Accesos y datos protegidos",
+  "Qué pasa cuando algo falla",
 ];
 
 const h2 = "text-3xl sm:text-[2.5rem]";
 
 export default function Home() {
-  const qaYears = yearsSince(site.qaSinceYear);
-  const devYears = yearsSince(site.devSinceYear);
   const mainMessage = "Hola Julio, quiero consultarte por IA para mi trabajo.";
 
   return (
@@ -72,13 +70,6 @@ export default function Home() {
               Ver servicios
             </CtaButton>
           </div>
-          <ul className="mt-10 inline-flex flex-col border border-line bg-surface text-sm sm:flex-row">
-            <li className="px-4 py-3">{qaYears} años en calidad de software</li>
-            <li className="border-t border-line px-4 py-3 sm:border-t-0 sm:border-l">
-              {devYears} años en desarrollo web
-            </li>
-            <li className="border-t border-line px-4 py-3 sm:border-t-0 sm:border-l">Trabajo remoto</li>
-          </ul>
         </div>
         <FlowDiagram />
       </Section>
@@ -158,19 +149,18 @@ export default function Home() {
       >
         <div>
           <TwoTone
-            lead="Antes de entregar, lo pruebo."
-            rest="Vengo del testing de software."
+            lead="Calidad y seguridad en cada solución."
+            rest="También cuando aplicamos IA."
             dark
             className={h2}
           />
           <p className="mt-6 max-w-lg text-lg text-band-muted">
-            Hace {qaYears} años trabajo en control de calidad de software (QA): mi trabajo es
-            encontrar lo que falla antes de que le pase a alguien. Desde hace {devYears} años también
-            desarrollo aplicaciones web. Por eso no solo armo soluciones con IA: las pruebo a fondo
-            para que funcionen el día que las necesitás.
+            Tengo 10 años de experiencia cuidando la calidad del software, además de experiencia en
+            desarrollo web y soluciones con IA. Reviso cómo se comportan, qué pasa con los datos y
+            cómo responden ante errores, para que puedas usarlas con confianza en tu trabajo diario.
           </p>
           <Link href="/sobre-mi" className="group mt-8 inline-flex items-center gap-1.5 font-medium">
-            Conocé más sobre mí
+            Conocé mi experiencia
             <ArrowRight className="size-4 transition-transform duration-200 group-hover:translate-x-0.5" />
           </Link>
         </div>

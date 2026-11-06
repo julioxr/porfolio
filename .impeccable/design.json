@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-18T00:00:00Z",
+  "title": "Design System: Julio Roja",
+  "extensions": {
+    "colorMeta": {
+      "accent": { "role": "primary", "displayName": "Azul Profundo", "canonical": "#1f45d6", "dark": "#7f9dff", "tonalRamp": ["oklch(22% 0.12 266)", "oklch(32% 0.17 266)", "oklch(42% 0.21 266)", "oklch(49% 0.23 266)", "oklch(60% 0.18 266)", "oklch(72% 0.12 266)", "oklch(85% 0.06 266)", "oklch(95% 0.02 266)"] },
+      "accent-hover": { "role": "primary", "displayName": "Azul Profundo Hundido", "canonical": "#1838b3", "dark": "#a3b9ff" },
+      "accent-ink": { "role": "primary", "displayName": "Texto sobre azul", "canonical": "#ffffff", "dark": "#0a101d" },
+      "accent-soft": { "role": "primary", "displayName": "Azul Velado", "canonical": "#eef2fd", "dark": "#16224a" },
+      "ink": { "role": "neutral", "displayName": "Tinta Navy", "canonical": "#0b1324", "dark": "#eef2f8", "tonalRamp": ["oklch(17% 0.03 265)", "oklch(26% 0.03 265)", "oklch(36% 0.03 265)", "oklch(46% 0.03 265)", "oklch(58% 0.025 265)", "oklch(70% 0.02 265)", "oklch(84% 0.012 265)", "oklch(95% 0.006 265)"] },
+      "muted": { "role": "neutral", "displayName": "Pizarra", "canonical": "#4f5a6e", "dark": "#a3aec2" },
+      "bg": { "role": "neutral", "displayName": "Blanco", "canonical": "#ffffff", "dark": "#0a101d" },
+      "surface": { "role": "neutral", "displayName": "Superficie", "canonical": "#ffffff", "dark": "#111a2b" },
+      "subtle": { "role": "neutral", "displayName": "Niebla Azulada", "canonical": "#f6f8fb", "dark": "#0e1626" },
+      "line": { "role": "neutral", "displayName": "Regla", "canonical": "#e4e8ef", "dark": "#1f2a3f" },
+      "line-strong": { "role": "neutral", "displayName": "Regla Firme", "canonical": "#cfd6e2", "dark": "#2c3a55" },
+      "band": { "role": "neutral", "displayName": "Banda Nocturna", "canonical": "#0b1324", "dark": "#111a2b" },
+      "band-ink": { "role": "neutral", "displayName": "Texto de banda", "canonical": "#f5f7fb", "dark": "#eef2f8" },
+      "band-muted": { "role": "neutral", "displayName": "Bajada de banda", "canonical": "#aab4c7", "dark": "#a3aec2" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Solo el h1 del home. Páginas internas: 2.25rem a 3.25rem con el mismo tratamiento." },
+      "headline": { "displayName": "Headline", "purpose": "h2 de sección; 1.5rem a 1.875rem en páginas internas, 1.875rem a 2.25rem en la banda de CTA." },
+      "title": { "displayName": "Title", "purpose": "h3 de tarjetas, pasos y paneles (1.125 a 1.25rem)." },
+      "body": { "displayName": "Body", "purpose": "Texto corrido con text-wrap: pretty, bloques de 36 a 42rem." },
+      "lead": { "displayName": "Lead", "purpose": "Bajada en color muted bajo títulos (1.125rem a 1.25rem)." },
+      "label": { "displayName": "Label", "purpose": "Navegación, metadatos, etiquetas; los botones usan 0.9375rem en peso 500." }
+    },
+    "shadows": [
+      { "name": "soft", "value": "0 1px 2px rgb(11 19 36 / 0.04), 0 8px 24px -8px rgb(11 19 36 / 0.1)", "dark": "0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px -8px rgb(0 0 0 / 0.5)", "purpose": "Única sombra: superficies que contienen algo, botón primario y hover de tarjetas." }
+    ],
+    "focus": [
+      { "name": "ring", "value": "outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px", "purpose": "Foco global por :focus-visible." }
+    ],
+    "motion": [
+      { "name": "state", "value": "200ms ease (transition-colors / border-color, box-shadow)", "purpose": "Hover de botones, tarjetas y links." },
+      { "name": "nudge", "value": "translateX(2px) en 200ms", "purpose": "Flecha de link en hover." },
+      { "name": "reveal", "value": "rotate(45deg) en 200ms", "purpose": "Ícono + de FAQ al abrir." },
+      { "name": "reduced", "value": "prefers-reduced-motion: duraciones a 0.01ms y scroll automático", "purpose": "Respeto de movimiento reducido." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botón primario",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Acción principal: escribir por WhatsApp o enviar el formulario.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 19.5l1.3-3.9A8 8 0 1 1 8.4 18.7z\"/><path d=\"M9 10.5c0 2.2 2.3 4.5 4.5 4.5l1.2-1.3-1.6-.9-.8.6a3.3 3.3 0 0 1-1.7-1.7l.6-.8-.9-1.6z\"/></svg>Escribime por WhatsApp</a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 0 20px; border-radius: 8px; background: var(--accent, #1f45d6); color: var(--accent-ink, #fff); font-family: var(--font-geist), ui-sans-serif, system-ui, sans-serif; font-size: 0.9375rem; font-weight: 500; text-decoration: none; box-shadow: var(--shadow, 0 1px 2px rgb(11 19 36 / 0.04), 0 8px 24px -8px rgb(11 19 36 / 0.1)); transition: background-color 200ms ease; } .ds-btn-primary svg { width: 1.1em; height: 1.1em; } .ds-btn-primary:hover { background: var(--accent-hover, #1838b3); } .ds-btn-primary:focus-visible { outline: 2px solid var(--accent, #1f45d6); outline-offset: 3px; }"
+    },
+    {
+      "name": "Botón outline",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Acción secundaria junto al primario.",
+      "html": "<a class=\"ds-btn-outline\" href=\"#\">Ver servicios</a>",
+      "css": ".ds-btn-outline { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 20px; border-radius: 8px; border: 1px solid var(--line-strong, #cfd6e2); background: var(--surface, #fff); color: var(--ink, #0b1324); font-family: var(--font-geist), ui-sans-serif, system-ui, sans-serif; font-size: 0.9375rem; font-weight: 500; text-decoration: none; transition: border-color 200ms ease; } .ds-btn-outline:hover { border-color: color-mix(in srgb, var(--ink, #0b1324) 40%, transparent); } .ds-btn-outline:focus-visible { outline: 2px solid var(--accent, #1f45d6); outline-offset: 3px; }"
+    },
+    {
+      "name": "Campo de texto",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Input y textarea del formulario de contacto.",
+      "html": "<label class=\"ds-field\"><span>Nombre</span><input type=\"text\" /></label>",
+      "css": ".ds-field { display: block; font-family: var(--font-geist), ui-sans-serif, system-ui, sans-serif; color: var(--ink, #0b1324); } .ds-field span { font-weight: 500; } .ds-field input { display: block; margin-top: 8px; width: 100%; padding: 10px 14px; border-radius: 8px; border: 1px solid var(--line-strong, #cfd6e2); background: var(--bg, #fff); color: var(--ink, #0b1324); font: inherit; font-size: 1rem; transition: border-color 150ms ease; } .ds-field input:hover { border-color: color-mix(in srgb, var(--ink, #0b1324) 40%, transparent); } .ds-field input:focus-visible { border-color: var(--accent, #1f45d6); outline: 2px solid var(--accent, #1f45d6); outline-offset: 3px; }"
+    },
+    {
+      "name": "Header",
+      "kind": "nav",
+      "description": "Header fijo con monograma, nav y botón chico.",
+      "html": "<header class=\"ds-nav\"><a class=\"ds-nav-brand\" href=\"#\"><span>JR</span>Julio Roja</a><nav><a href=\"#\">Servicios</a><a href=\"#\">Cómo trabajo</a><a href=\"#\">Sobre mí</a><a href=\"#\">Contacto</a></nav><a class=\"ds-nav-cta\" href=\"#\">Escribime</a></header>",
+      "css": ".ds-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 64px; padding: 0 24px; border-bottom: 1px solid var(--line, #e4e8ef); background: var(--bg, #fff); font-family: var(--font-geist), ui-sans-serif, system-ui, sans-serif; } .ds-nav-brand { display: flex; align-items: center; gap: 10px; font-size: 0.9375rem; font-weight: 600; letter-spacing: -0.025em; color: var(--ink, #0b1324); text-decoration: none; } .ds-nav-brand span { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 6px; background: var(--ink, #0b1324); color: var(--bg, #fff); font-size: 0.6875rem; letter-spacing: 0; } .ds-nav nav { display: flex; gap: 32px; font-size: 0.875rem; } .ds-nav nav a { color: var(--muted, #4f5a6e); text-decoration: none; transition: color 150ms ease; } .ds-nav nav a:hover { color: var(--ink, #0b1324); } .ds-nav-cta { display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 8px; background: var(--accent, #1f45d6); color: var(--accent-ink, #fff); font-size: 0.875rem; font-weight: 500; text-decoration: none; transition: background-color 200ms ease; } .ds-nav-cta:hover { background: var(--accent-hover, #1838b3); }"
+    },
+    {
+      "name": "Tarjeta de servicio",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Link a un servicio: plana en reposo, se despega en hover.",
+      "html": "<a class=\"ds-card\" href=\"#\"><h3>Automatización de procesos</h3><p>Que las tareas repetitivas se hagan solas.</p><span>Ver el servicio <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></a>",
+      "css": ".ds-card { display: flex; flex-direction: column; padding: 32px; border-radius: 12px; border: 1px solid var(--line, #e4e8ef); background: var(--surface, #fff); color: var(--ink, #0b1324); font-family: var(--font-geist), ui-sans-serif, system-ui, sans-serif; text-decoration: none; transition: border-color 200ms ease, box-shadow 200ms ease; } .ds-card h3 { margin: 0; font-size: 1.25rem; font-weight: 600; letter-spacing: -0.025em; line-height: 1.12; } .ds-card p { margin: 12px 0 0; color: var(--muted, #4f5a6e); line-height: 1.65; } .ds-card span { margin-top: 24px; display: inline-flex; align-items: center; gap: 6px; font-size: 0.875rem; font-weight: 500; color: var(--accent, #1f45d6); } .ds-card svg { width: 16px; height: 16px; transition: transform 200ms ease; } .ds-card:hover { border-color: var(--line-strong, #cfd6e2); box-shadow: var(--shadow, 0 1px 2px rgb(11 19 36 / 0.04), 0 8px 24px -8px rgb(11 19 36 / 0.1)); } .ds-card:hover svg { transform: translateX(2px); } .ds-card:focus-visible { outline: 2px solid var(--accent, #1f45d6); outline-offset: 3px; }"
+    },
+    {
+      "name": "Lista con checks",
+      "kind": "custom",
+      "refersTo": "check-badge",
+      "description": "Filas entre reglas con círculo azul velado y check SVG.",
+      "html": "<ul class=\"ds-checks\"><li><span><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg></span>Con datos normales</li><li><span><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg></span>Cuando falla la conexión</li></ul>",
+      "css": ".ds-checks { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line, #e4e8ef); border-bottom: 1px solid var(--line, #e4e8ef); font-family: var(--font-geist), ui-sans-serif, system-ui, sans-serif; color: var(--ink, #0b1324); } .ds-checks li { display: flex; align-items: center; gap: 12px; padding: 14px 0; } .ds-checks li + li { border-top: 1px solid var(--line, #e4e8ef); } .ds-checks span { display: grid; place-items: center; flex-shrink: 0; width: 24px; height: 24px; border-radius: 9999px; background: var(--accent-soft, #eef2fd); color: var(--accent, #1f45d6); } .ds-checks svg { width: 14px; height: 14px; }"
+    },
+    {
+      "name": "Banda de CTA final",
+      "kind": "custom",
+      "refersTo": "cta-band",
+      "description": "Bloque oscuro que cierra cada página con la llamada a escribir.",
+      "html": "<section class=\"ds-band\"><div><h2>Contame qué tarea te consume más tiempo</h2><p>Te respondo con una idea concreta, sin compromiso.</p></div><a href=\"#\">Escribime por WhatsApp</a></section>",
+      "css": ".ds-band { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 32px; padding: 64px 48px; border-radius: 12px; background: var(--band, #0b1324); color: var(--band-ink, #f5f7fb); font-family: var(--font-geist), ui-sans-serif, system-ui, sans-serif; } .ds-band h2 { margin: 0; font-size: 2.25rem; font-weight: 600; letter-spacing: -0.025em; line-height: 1.12; } .ds-band p { margin: 16px 0 0; font-size: 1.125rem; color: var(--band-muted, #aab4c7); } .ds-band a { display: inline-flex; align-items: center; min-height: 48px; padding: 0 20px; border-radius: 8px; background: var(--accent, #1f45d6); color: var(--accent-ink, #fff); font-size: 0.9375rem; font-weight: 500; text-decoration: none; transition: background-color 200ms ease; } .ds-band a:hover { background: var(--accent-hover, #1838b3); } .ds-band a:focus-visible { outline: 2px solid var(--accent, #1f45d6); outline-offset: 3px; }"
+    },
+    {
+      "name": "FAQ",
+      "kind": "custom",
+      "description": "Details entre reglas con + que rota al abrir.",
+      "html": "<div class=\"ds-faq\"><details><summary>¿Necesito saber de tecnología?<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 5v14M5 12h14\"/></svg></summary><p>No. Yo me encargo de la parte técnica.</p></details></div>",
+      "css": ".ds-faq { border-top: 1px solid var(--line, #e4e8ef); border-bottom: 1px solid var(--line, #e4e8ef); font-family: var(--font-geist), ui-sans-serif, system-ui, sans-serif; color: var(--ink, #0b1324); } .ds-faq summary { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 20px 0; font-size: 1.0625rem; font-weight: 500; cursor: pointer; list-style: none; transition: color 150ms ease; } .ds-faq summary::-webkit-details-marker { display: none; } .ds-faq summary:hover { color: var(--accent, #1f45d6); } .ds-faq svg { width: 20px; height: 20px; flex-shrink: 0; color: var(--muted, #4f5a6e); transition: transform 200ms ease; } .ds-faq details[open] svg { transform: rotate(45deg); } .ds-faq p { margin: -4px 0 0; padding-bottom: 20px; color: var(--muted, #4f5a6e); line-height: 1.65; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "El estudio prolijo",
+    "overview": "El sitio se ve como el de un consultor serio que cuida los detalles: blanco limpio, tinta casi negra con un dejo azul, un único azul profundo para todo lo que se puede tocar, y mucho aire entre bloques. Es el estándar del rubro elegido a propósito, terminado con la vara de un producto de software (Stripe, Linear): bordes de 1px, radios medidos, sombras que apenas despegan la superficie y cifras tabulares donde hay números.\n\nLa seriedad sale de la precisión, no del adorno. No hay texturas, ilustraciones, degradés ni color decorativo: la jerarquía la arman el tamaño y el peso tipográfico, el gris azulado de las secciones alternas y una banda oscura que cierra cada página con la llamada a escribir. Una sola familia (Geist) resuelve títulos, cuerpo y UI. La identidad anterior \"planilla / cuaderno\" (cuadrícula de papel, amarillo resaltador, serif de cuerpo) quedó descartada y no vuelve.\n\nHay variante oscura completa por `prefers-color-scheme`: los mismos roles se remapean a un fondo navy profundo y el azul se aclara para mantener contraste. Todo token se usa por su rol, nunca por su hex.",
+    "keyCharacteristics": [
+      "Blanco y gris azulado muy claro, alternados por sección, separados por una regla de 1px.",
+      "Un solo color de acción: azul profundo para botones, links, números de paso y el total anual.",
+      "Geist en todo; títulos semibold con tracking negativo y `text-wrap: balance`.",
+      "Bordes de 1px y radios de 8px (controles) y 12px (superficies).",
+      "Sombra suave de dos capas, solo sobre superficies que contienen algo (tarjeta, calculadora, retrato, botón primario).",
+      "Iconos SVG propios de trazo uniforme (1.75), nunca glifos ni paquetes de iconos."
+    ],
+    "rules": [
+      { "name": "La Regla de la Única Voz", "body": "El azul es el único color con significado. Si algo es azul, se puede tocar o es la cifra que importa. No se suma un segundo acento.", "section": "colors" },
+      { "name": "La Regla del Rol, no del Hex", "body": "Siempre se usa el token (`bg-subtle`, `text-muted`, `border-line`), porque la variante oscura remapea cada rol. Un hex escrito a mano rompe el modo oscuro.", "section": "colors" },
+      { "name": "La Regla de las Cifras Tabulares", "body": "Todo número que se compara o se suma (horas, totales, numeración de pasos) va con `tabular-nums`.", "section": "typography" },
+      { "name": "La Regla Sin Rótulos", "body": "No hay texto en mayúsculas espaciadas sobre los títulos. Un título se sostiene solo, con su bajada debajo.", "section": "typography" },
+      { "name": "La Regla de una Sola Sombra", "body": "No hay escalas de elevación. Una superficie está en el plano o lleva la Sombra Suave; nunca más.", "section": "elevation" }
+    ],
+    "dos": [
+      "**Do** usar siempre los tokens de rol (`bg`, `surface`, `subtle`, `ink`, `muted`, `accent`, `line`, `band`) para que la variante oscura funcione sola.",
+      "**Do** reservar el azul para lo accionable y la cifra principal.",
+      "**Do** separar secciones con una regla de 1px y alternar blanco con `subtle`.",
+      "**Do** usar 8px de radio en controles y 12px en superficies.",
+      "**Do** dibujar iconos como SVG de 24×24 con trazo de 1.75, `currentColor` y extremos redondeados.",
+      "**Do** poner `tabular-nums` en todo número que se compara.",
+      "**Do** cerrar cada página con la banda de CTA oscura."
+    ],
+    "donts": [
+      "**Don't** volver a la estética \"planilla / cuaderno\": nada de cuadrícula de papel, amarillo resaltador ni bordes gruesos.",
+      "**Don't** sumar un segundo color de acento ni degradés.",
+      "**Don't** apilar sombras ni crear niveles de elevación nuevos; solo existe la Sombra Suave.",
+      "**Don't** poner rótulos en mayúsculas espaciadas sobre los títulos.",
+      "**Don't** usar glifos o emojis como íconos.",
+      "**Don't** mostrar logos, métricas o testimonios que no existan; el sistema no tiene componente para \"prueba social\" inventada."
+    ]
+  }
+}

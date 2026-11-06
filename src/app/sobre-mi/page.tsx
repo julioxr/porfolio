@@ -23,11 +23,9 @@ const principles = [
   "Lo que armo queda documentado y es tuyo.",
 ];
 
-const link = "font-medium text-accent underline decoration-accent/30 underline-offset-4 transition-colors hover:decoration-accent";
 const h2 = "text-3xl sm:text-[2.5rem]";
 
 export default function SobreMi() {
-  const qaYears = yearsSince(site.qaSinceYear);
   const devYears = yearsSince(site.devSinceYear);
 
   const timeline = [
@@ -65,22 +63,20 @@ export default function SobreMi() {
           <TwoTone
             as="h1"
             lead="Hola, soy Julio."
-            rest="Pruebo software hace años. Ahora lo aplico a la IA."
-            className="text-[2.5rem] sm:text-6xl"
+            rest="Calidad y seguridad para soluciones con IA."
+            className="text-[2.5rem] sm:text-5xl"
           />
           <div className="mt-8 max-w-2xl space-y-5 text-lg text-muted">
             <p>
-              Hace {qaYears} años trabajo en control de calidad de software (QA), la tarea de
-              asegurarse de que las cosas funcionen antes de que lleguen a las personas. Hace{" "}
-              {devYears} años también desarrollo aplicaciones web.
+              Hace 10 años trabajo en calidad de software y hace {devYears} años desarrollo
+              aplicaciones web. Me ocupo de que cada solución sea confiable, segura y funcione bien
+              en el uso real.
             </p>
             <p>
-              Cuando la inteligencia artificial empezó a ser útil de verdad, vi que muchas pymes y
-              profesionales no necesitaban teoría: necesitaban a alguien que los ayude a aplicarla en
-              tareas concretas, y que lo que se arme funcione el lunes a la mañana, no solo en la
-              demo.
+              Hoy aplico esa experiencia a soluciones con inteligencia artificial para pymes y
+              profesionales: entiendo cómo trabajás, propongo algo simple y lo construyo para
+              resolver una tarea concreta.
             </p>
-            <p>Eso es lo que hago: escucho cómo trabajás, propongo algo simple, lo armo y lo pruebo.</p>
           </div>
           <div className="mt-10">
             <CtaButton href={whatsappLink("Hola Julio, leí tu sitio y quiero consultarte algo.")} location="about">
@@ -111,16 +107,7 @@ export default function SobreMi() {
         <div>
           <TwoTone lead="Cómo trabajo." rest="Lo que podés esperar de mí." className={h2} />
           <p className="mt-6 max-w-md text-lg text-muted">
-            Además de la consultoría, construyo mis propios proyectos de software. Podés ver mi
-            código en{" "}
-            <a href={site.github} className={link} target="_blank" rel="noopener noreferrer">
-              GitHub
-            </a>{" "}
-            y mi trayectoria en{" "}
-            <a href={site.linkedin} className={link} target="_blank" rel="noopener noreferrer">
-              LinkedIn
-            </a>
-            .
+            Además de la consultoría, construyo mis propios proyectos de software y soluciones con IA.
           </p>
         </div>
         <ul className="self-start border border-line bg-surface">

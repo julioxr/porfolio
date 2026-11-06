@@ -116,6 +116,73 @@ a {
   text-underline-offset: 0.2em;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  a,
+  button {
+    transition-property: color, background-color, border-color, box-shadow, transform;
+    transition-duration: 180ms;
+    transition-timing-function: ease;
+  }
+
+  .flow-card {
+    animation: flow-enter 520ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+
+  .flow-channel {
+    animation: flow-enter 420ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+    animation-delay: var(--flow-delay, 0ms);
+  }
+
+  .flow-pulse {
+    animation: flow-pulse 2.4s ease-out infinite;
+  }
+
+  .calc-meter {
+    transition: width 380ms cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+
+  .example-preview {
+    transition: transform 240ms ease, border-color 240ms ease, box-shadow 240ms ease;
+  }
+
+  .example-card:hover .example-preview {
+    transform: translateY(-3px);
+    border-color: var(--line-strong);
+    box-shadow: var(--shadow);
+  }
+
+  .calc-row {
+    transition: background-color 180ms ease;
+  }
+
+  .calc-row:focus-within {
+    background-color: color-mix(in srgb, var(--accent-soft) 35%, transparent);
+  }
+}
+
+@keyframes flow-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes flow-pulse {
+  0% {
+    opacity: 0.45;
+    transform: scale(1);
+  }
+  75%,
+  100% {
+    opacity: 0;
+    transform: scale(2.6);
+  }
+}
+
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;

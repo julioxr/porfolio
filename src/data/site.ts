@@ -7,8 +7,6 @@ export const site = {
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "",
   gaId: process.env.NEXT_PUBLIC_GA_ID ?? "",
   formspreeId: process.env.NEXT_PUBLIC_FORMSPREE_ID ?? "xvonvajk",
-  linkedin: "https://www.linkedin.com/in/julio-roja/",
-  github: "https://github.com/julioxr",
   qaSinceYear: 2017,
   devSinceYear: 2021,
   description:

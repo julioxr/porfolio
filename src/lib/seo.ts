@@ -42,7 +42,6 @@ export const personJsonLd = {
   jobTitle: site.descriptor,
   url: site.url,
   email: site.email,
-  sameAs: [site.linkedin, site.github],
   knowsAbout: [
     "Inteligencia artificial",
     "Automatización de procesos",
@@ -63,7 +62,6 @@ export const businessJsonLd = {
   areaServed: ["AR", "Latinoamérica"],
   availableLanguage: "es",
   email: site.email,
-  sameAs: [site.linkedin, site.github],
 };
 
 export function faqJsonLd(items: { q: string; a: string }[]) {

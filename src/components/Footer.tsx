@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { site, whatsappLink } from "@/data/site";
 import { services } from "@/data/services";
 
@@ -11,12 +12,13 @@ export function Footer() {
       <div className="mx-auto max-w-[75rem] sm:border-x sm:border-band-line">
         <div className="flex flex-col gap-12 py-14 sm:px-12 sm:py-16 lg:flex-row lg:justify-between">
           <div className="max-w-xs">
-            <p className="flex items-center gap-3 font-semibold tracking-tight">
-              <span aria-hidden className="grid size-8 place-items-center rounded-[4px] bg-band-ink text-xs text-band">
-                JR
-              </span>
-              {site.name}
-            </p>
+            <Image
+              src="/logo-julio-claro.png"
+              alt={site.name}
+              width={220}
+              height={47}
+              className="h-9 w-auto"
+            />
             <p className="mt-4 text-sm text-band-muted">{site.descriptor} para pymes y profesionales independientes.</p>
           </div>
 
@@ -56,16 +58,6 @@ export function Footer() {
                 <li>
                   <a href={`mailto:${site.email}`} className={`${item} break-all`}>
                     {site.email}
-                  </a>
-                </li>
-                <li>
-                  <a href={site.linkedin} target="_blank" rel="noopener noreferrer" className={item}>
-                    LinkedIn
-                  </a>
-                </li>
-                <li>
-                  <a href={site.github} target="_blank" rel="noopener noreferrer" className={item}>
-                    GitHub
                   </a>
                 </li>
               </ul>

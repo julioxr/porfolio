@@ -1,9 +1,14 @@
 import { ImageResponse } from "next/og";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 
 export const size = { width: 64, height: 64 };
 export const contentType = "image/png";
 
-export default function Icon() {
+export default async function Icon() {
+  const mark = await readFile(path.join(process.cwd(), "public", "logo-marca.png"));
+  const src = `data:image/png;base64,${mark.toString("base64")}`;
+
   return new ImageResponse(
     (
       <div
@@ -13,14 +18,11 @@ export default function Icon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          background: "#1c1917",
-          color: "#f4f3ee",
-          fontSize: 36,
-          fontWeight: 600,
+          background: "#f5f3ef",
           borderRadius: 14,
         }}
       >
-        JR
+        <img src={src} width={52} height={33} />
       </div>
     ),
     size,

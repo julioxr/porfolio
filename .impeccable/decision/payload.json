@@ -1,0 +1,100 @@
+{
+  "title": "Elegí la nueva identidad del sitio",
+  "question": "Tres caminos sobrios para reemplazar la planilla. Quedate con uno, pedí otra tanda o elegí el estándar del rubro.",
+  "options": [
+    {
+      "id": "assigned",
+      "kind": "assigned",
+      "label": "Directorio del edificio",
+      "kicker": "THE ROLL",
+      "lineage": "Directorios de hall de los edificios de oficinas del microcentro porteño",
+      "thesis": "El sitio como el directorio de un estudio serio: cada servicio es una oficina con número, nombre y puerta.",
+      "palette": ["#f4f4f1", "#1b1c1e", "#151617", "#a8875a"],
+      "materials": ["piedra negra pulida", "letras de bronce grabadas", "papel blanco liso"],
+      "viewport": "Titular y WhatsApp a la izquierda; a la derecha el directorio negro con los 4 servicios numerados 01–04 en bronce.",
+      "risk": "Si el bronce se usa de más, puede leerse como hotel de lujo en vez de consultor cercano.",
+      "raised": [
+        { "from": "challenger-nixie", "raise": "La calculadora de horas pasa a ser un contador fijo grabado en el directorio: el número es la interfaz." },
+        { "from": "challenger-brick", "raise": "El proceso de trabajo es una secuencia estrictamente numerada sobre un único módulo de grilla." },
+        { "from": "challenger-quote", "raise": "Cada fila nombra la tarea en las palabras del cliente, no en jerga de IA." },
+        { "from": "challenger-onebit", "raise": "Dos tonos con compromiso total; el estado activo se marca invirtiendo la fila." },
+        { "from": "challenger-greiman", "raise": "Saltos de escala valientes: numerales grandes y finos contra etiquetas chicas." }
+      ],
+      "html": ".impeccable/decision/assigned.html"
+    },
+    {
+      "id": "model-pick",
+      "kind": "pick",
+      "label": "Propuesta de consultora",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Propuestas e informes de consultoras: secciones numeradas, un color institucional",
+      "thesis": "El sitio se lee como una propuesta profesional bien impresa: índice numerado, una banda de color y mucho blanco.",
+      "palette": ["#ffffff", "#0e3a4a", "#16252c", "#9cc2cc"],
+      "materials": ["papel blanco", "banda de color institucional", "reglas finas"],
+      "viewport": "Banda petróleo a todo el ancho con el titular y el botón; abajo el índice 01–04 de servicios.",
+      "risk": "Es la dirección más familiar: sobria y segura, pero se parece a muchas consultoras.",
+      "html": ".impeccable/decision/pick.html"
+    },
+    {
+      "id": "challenger-nixie",
+      "kind": "challenger",
+      "catalogId": "signals-instruments-nixie-laboratory-counter",
+      "label": "Contador nixie",
+      "verdict": "declined",
+      "lineage": "Contadores de laboratorio con tubos nixie",
+      "thesis": "Las cantidades son la interfaz.",
+      "palette": ["#0d0d0d", "#ff7a1a", "#8a8f94"],
+      "materials": ["vidrio", "acero ennegrecido"],
+      "viewport": "Un banco de tubos con las horas perdidas brillando.",
+      "case": "Demasiado de laboratorio para un dueño de pyme; pierde en identificación y claridad.",
+      "risk": "Se lee como gadget retro.",
+      "kept": "El número de horas como instrumento central.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-nixie-laboratory-counter-hero.webp"
+    },
+    {
+      "id": "challenger-brick",
+      "kind": "challenger",
+      "catalogId": "games-toys-physics-play-brick-build-instructions",
+      "label": "Instructivo de bloques",
+      "verdict": "declined",
+      "lineage": "Manuales de armado de bloques",
+      "thesis": "Pasos numerados que enseñan sin palabras.",
+      "palette": ["#7fb6e6", "#000000", "#d0281f", "#f5c400"],
+      "materials": ["papel celeste", "contorno negro"],
+      "viewport": "Un paso de armado con flechas.",
+      "case": "Juguete: justo lo que Julio quiere dejar atrás.",
+      "risk": "Infantil.",
+      "kept": "Secuencia numerada estricta en una grilla única.",
+      "hero": "https://impeccable.style/worlds/cards/games-toys-physics-play-brick-build-instructions-hero.webp"
+    },
+    {
+      "id": "challenger-quote",
+      "kind": "challenger",
+      "catalogId": "textiles-weave-drape-fashion-industrial-quote-grammar",
+      "label": "Gramática industrial",
+      "verdict": "declined",
+      "lineage": "Streetwear industrial con comillas",
+      "thesis": "Nombrar lo obvio, literalmente.",
+      "palette": ["#ffffff", "#000000", "#ff6a13"],
+      "materials": ["algodón", "nylon negro"],
+      "viewport": "Mayúsculas entre comillas y franjas de peligro.",
+      "case": "Moda urbana, no consultoría; pierde en ambos ejes.",
+      "risk": "Se lee como marca de ropa.",
+      "kept": "Cada zona nombrada con su nombre literal.",
+      "hero": "https://impeccable.style/worlds/cards/textiles-weave-drape-fashion-industrial-quote-grammar-hero.webp"
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "code" },
+  "canon": true,
+  "canonCard": {
+    "kind": "canon",
+    "label": "El estándar del rubro",
+    "thesis": "El sitio de consultor que el visitante espera, hecho con oficio.",
+    "palette": ["#ffffff", "#111827", "#1d4ed8"],
+    "materials": ["grilla limpia", "foto del consultor"],
+    "viewport": "Titular y botón a la izquierda, foto a la derecha, tarjetas de servicios abajo.",
+    "risk": "Indistinguible de la competencia, por diseño."
+  },
+  "steer": true
+}

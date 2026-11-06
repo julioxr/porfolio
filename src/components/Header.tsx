@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { site, whatsappLink } from "@/data/site";
 import { services } from "@/data/services";
 import { CtaButton } from "./WhatsAppButton";
@@ -14,14 +15,15 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-bg/95 px-4 backdrop-blur-sm sm:px-6 print:static">
       <div className="mx-auto flex h-16 max-w-[75rem] items-center justify-between gap-4 sm:border-x sm:border-line sm:px-6">
-        <Link href="/" className="flex items-center gap-3 text-[0.9375rem] font-semibold tracking-tight">
-          <span
-            aria-hidden
-            className="grid size-8 place-items-center rounded-[4px] bg-ink text-xs font-semibold tracking-normal text-bg"
-          >
-            JR
-          </span>
-          {site.name}
+        <Link href="/" aria-label={`${site.name}, inicio`} className="flex shrink-0 items-center">
+          <Image
+            src="/logo-julio-claro.png"
+            alt={site.name}
+            width={220}
+            height={47}
+            priority
+            className="h-8 w-auto sm:h-9"
+          />
         </Link>
 
         <nav aria-label="Principal" className="hidden items-center gap-8 text-sm md:flex">

@@ -1,9 +1,14 @@
 import { ImageResponse } from "next/og";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 
 export const size = { width: 180, height: 180 };
 export const contentType = "image/png";
 
-export default function AppleIcon() {
+export default async function AppleIcon() {
+  const mark = await readFile(path.join(process.cwd(), "public", "logo-marca.png"));
+  const src = `data:image/png;base64,${mark.toString("base64")}`;
+
   return new ImageResponse(
     (
       <div
@@ -13,13 +18,10 @@ export default function AppleIcon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          background: "#1c1917",
-          color: "#f4f3ee",
-          fontSize: 96,
-          fontWeight: 600,
+          background: "#f5f3ef",
         }}
       >
-        JR
+        <img src={src} width={146} height={92} />
       </div>
     ),
     size,

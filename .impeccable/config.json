@@ -1,0 +1,44 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "oversized-h1",
+        "value": "*",
+        "files": [
+          ".impeccable/decision/assigned.html"
+        ],
+        "createdAt": "2026-10-18T23:19:42.993Z",
+        "reason": "Claude: discarded decision-round sketches of unchosen directions, not shipped UI"
+      },
+      {
+        "rule": "oversized-h1",
+        "value": "*",
+        "files": [
+          ".impeccable/decision/pick.html"
+        ],
+        "createdAt": "2026-10-18T23:19:43.171Z",
+        "reason": "Claude: discarded decision-round sketches of unchosen directions, not shipped UI"
+      },
+      {
+        "rule": "hero-eyebrow-chip",
+        "value": "*",
+        "files": [
+          ".impeccable/decision/assigned.html"
+        ],
+        "createdAt": "2026-10-18T23:19:43.404Z",
+        "reason": "Claude: discarded decision-round sketches of unchosen directions, not shipped UI"
+      },
+      {
+        "rule": "hero-eyebrow-chip",
+        "value": "*",
+        "files": [
+          ".impeccable/decision/pick.html"
+        ],
+        "createdAt": "2026-10-18T23:19:43.602Z",
+        "reason": "Claude: discarded decision-round sketches of unchosen directions, not shipped UI"
+      }
+    ]
+  }
+}

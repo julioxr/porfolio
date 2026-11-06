@@ -51,19 +51,30 @@ export function HoursCalculator() {
 
       <ul className="divide-y divide-line">
         {tasks.map((t) => (
-          <li key={t.id} className="flex items-center justify-between gap-4 px-5 py-3.5 sm:px-6">
-            <div>
+          <li key={t.id} className="calc-row flex items-center justify-between gap-4 px-5 py-4 sm:px-6">
+            <div className="min-w-0 flex-1">
               <label htmlFor={`h-${t.id}`} className="block leading-snug font-medium">
                 {t.label}
               </label>
-              <span className="block text-sm text-muted">{t.hint}</span>
+              <span className="mt-0.5 flex items-center justify-between gap-3 text-sm text-muted">
+                <span>{t.hint}</span>
+                <span className="font-mono text-[10px] tabular-nums">
+                  {weekly === 0 ? 0 : Math.round((hours[t.id] / weekly) * 100)}%
+                </span>
+              </span>
+              <span className="mt-2 block h-1 max-w-40 overflow-hidden rounded-full bg-line" aria-hidden>
+                <span
+                  className="calc-meter block h-full rounded-full bg-accent"
+                  style={{ width: `${weekly === 0 ? 0 : (hours[t.id] / weekly) * 100}%` }}
+                />
+              </span>
             </div>
-            <div className="flex shrink-0 items-stretch overflow-hidden rounded-[4px] border border-line bg-bg">
+            <div className="calc-control flex shrink-0 items-stretch overflow-hidden rounded-[4px] border border-line bg-bg">
               <button
                 type="button"
                 aria-label={`Restar una hora a ${t.label.toLowerCase()}`}
                 onClick={() => update(t.id, hours[t.id] - 1)}
-                className="grid w-9 place-items-center text-lg transition-colors hover:bg-subtle"
+                className="grid w-9 place-items-center text-lg transition-colors hover:bg-accent-soft hover:text-accent active:bg-subtle"
               >
                 −
               </button>
@@ -81,7 +92,7 @@ export function HoursCalculator() {
                 type="button"
                 aria-label={`Sumar una hora a ${t.label.toLowerCase()}`}
                 onClick={() => update(t.id, hours[t.id] + 1)}
-                className="grid w-9 place-items-center text-lg transition-colors hover:bg-subtle"
+                className="grid w-9 place-items-center text-lg transition-colors hover:bg-accent-soft hover:text-accent active:bg-subtle"
               >
                 +
               </button>
@@ -91,13 +102,13 @@ export function HoursCalculator() {
       </ul>
 
       <div className="space-y-5 border-t border-line px-5 py-6 sm:px-6">
-        <div className="flex flex-wrap items-baseline gap-x-8 gap-y-2">
+        <div className="calc-total grid grid-cols-2 gap-3">
           <p className="flex items-baseline gap-2">
-            <span className="text-[2.75rem] leading-none font-semibold tracking-[-0.03em] tabular-nums">{weekly} h</span>
+            <span className="text-3xl leading-none font-semibold tracking-[-0.03em] tabular-nums transition-colors sm:text-[2.75rem]">{weekly} h</span>
             <span className="text-sm text-muted">por semana</span>
           </p>
           <p className="flex items-baseline gap-2">
-            <span className="text-[2.75rem] leading-none font-semibold tracking-[-0.03em] text-quiet tabular-nums">{yearly} h</span>
+            <span className="text-3xl leading-none font-semibold tracking-[-0.03em] text-quiet tabular-nums transition-colors sm:text-[2.75rem]">{yearly} h</span>
             <span className="text-sm text-muted">al año</span>
           </p>
         </div>
