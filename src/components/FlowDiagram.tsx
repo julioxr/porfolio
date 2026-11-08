@@ -31,7 +31,9 @@ export function FlowDiagram() {
 
         <div aria-hidden className="flow-connector relative flex h-full items-center justify-center text-accent">
           <span className="absolute inset-y-3 left-1/2 w-px -translate-x-1/2 bg-line-strong" />
-          <span className="relative grid size-7 place-items-center rounded-full border border-line bg-surface">
+          <span className="flow-signal absolute left-1/2 top-0 z-0 size-1.5 -translate-x-1/2 rounded-full bg-accent" />
+          <span className="flow-signal flow-signal--delayed absolute left-1/2 top-0 z-0 size-1.5 -translate-x-1/2 rounded-full bg-accent" />
+          <span className="relative z-10 grid size-7 place-items-center rounded-full border border-line bg-surface">
             <ArrowRight className="size-3.5" />
           </span>
         </div>
